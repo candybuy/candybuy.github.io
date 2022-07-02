@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="post">
+        <img class="post__thanks" src="images/illustration-thank-you.svg" alt="thank you illustration">
+        <div class="selected"></div>
+        <div class="h1">Thank You!</div>
+        <div class="p">We appreciate you taking the time to give a rating. If you ever need more support, don't hestitate to get in touch!</div>
+
+      </div>
+      <div class="star-widget">
+        <div class="circle">
+          <img src="images/icon-star.svg" alt="star" class="circle__star">
+        </div>
+        <div class="h1">How did we do?</div>
+        <div class="p">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
+        <!-- Ratings -->
+        <div id="myDIV">
+          <button class="btn circle active">1</button>
+          <button class="btn circle">2</button>
+          <button class="btn circle">3</button>
+          <button class="btn circle">4</button>
+          <button class="btn circle">5</button>
+        </div>
+        <form action="#">
+          <div class="form-btn">
+            <button type="submit" class="btn-submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
