@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900);
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans";
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-image: linear-gradient($softviolet, $softblue);
+}
+
+.container {
+    background: #fff;
+    position: relative;
+    width: 330px;
+    height: 535px;
+    border-radius: 15px;
+    margin-top: 6rem;
+}
+.container__image {
+    position: absolute;
+    left: 50px;
+    top: -110px;
+}
+
+
+.woman {
+    position: relative;
+    // bottom: 105px;
+    width: 236px;
+}
+
+.wooman_shadow {
+    position: relative;
+    bottom: 72px;
+    width: 236px;
+}
+
+
+.h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px 0 25px 0;
+}
+.accordion {
+    font-size: 12px;
+    margin: 0 auto;
+}
+.menu {
+    border-bottom: 1px solid $lgblue;
+    margin: 0 26px 20px 26px;
+    position: relative;
+    cursor: pointer;
+}
+.menu::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px $lgblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    // z-index: 1;
+}
+
+.title {
+    color: $vdgblue;
+    flex:1;
+    position: relative;
+    padding-bottom: 25px;
+    &::after {
+        position: absolute;
+        right: 0;
+        content: url("../images/icon-arrow-down.svg");
+    }
+    &:hover {
+        color: $softred;
+    }
+    &:focus {
+        color: $softred;
+    }
+}
+
+
+.title-active {
+    font-weight: 600;
+    color: $vddblue;
+}
+
+.title-active::after {
+    position: absolute;
+    right: 0;
+    content: url("../images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+}
+
+.content {
+    color: $dgblue;
+    display:none;
+    padding: 0 10px 10px 10px;
+}
+
+.content-show {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 920px;
+        height: 509px;
+    }
+    .container__faq {
+        width: 444px;
+        margin-left: 476px;
+    }
+    .h1 {
+        text-align: left;
+    }
+    .menu {
+        margin-left: 0px;
+    }
+    .container__image {
+        left: -62px;
+        top: 81px;
+    }
+    .woman {
+        position: relative;
+        // bottom: 105px;
+        width: 400px;
+    }
+    
+    .wooman_shadow {
+        position: relative;
+        top: 68px;
+        right: 400px;
+        width: 400px;
+    }
+}
