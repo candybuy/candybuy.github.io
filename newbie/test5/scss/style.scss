@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+@import "vars";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+html {
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: $red;
+}
+
+.content {
+    margin: 24px;
+    text-align: center;
+    // max-width: 327px;
+}
+.content__first {
+    max-width: 500px;
+}
+.h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 65px 0 40px 0;
+}
+.subtitle {
+    color: #fff;
+    margin-bottom: 70px;
+}
+.content__button {
+    width: 100%;
+    background: $blue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+.content__second {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+}
+.trial {
+    padding: 19px 0;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin: 0 70px;
+    text-align: center;
+    span {
+        font-weight: 700;
+    }
+}
+
+form {
+    margin-top: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.container {
+    padding: 25px;
+}
+
+.block {
+    position: relative;
+}
+input {
+    display: block;
+    width: 280px;
+    height: 56px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid $grayishBlue;
+    padding: 1.2rem 1.8rem;
+    outline: none;
+    &:focus {
+        border: 1px solid $darkBlue;
+    }
+    &::placeholder {
+        font-size: 13px;
+        color: $darkBlue;
+        padding-left: 10px; 
+        font-weight: bolder;
+    }
+}
+
+input.invalid {
+    border-color: $red!important;
+    border-width: 2px !important;
+}
+
+
+.block__img {
+    position: absolute;
+    right: 8%;
+    top: 16%;
+    display: none;
+}
+
+.block__img.visible {
+    display: inline-block;
+}
+
+.block__text {
+    display: none;
+    position: relative;
+    bottom: 16px;
+}
+
+.block__text.visible {
+    display: block;
+    text-align: right;
+    color: $red;
+    font-style: italic;
+    font-size: 0.8em;
+}
+// ------------------------------------------------------
+.clearfix {
+    height: 100%;
+    width: 100%;
+    background: $green;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-bottom: 3px outset $green;
+    border-right: 1px solid $green;
+    border-left: 1px solid $green;
+    border-top: 1px solid $green;
+    &:hover {
+        background: hsl(154, 61%, 47%);
+    }
+}
+.signupbtn {
+    padding: 19px 0;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+// .jail {
+//     cursor: not-allowed;
+//     background: $grayishBlue;
+//     border-bottom: none;
+//     border-right:none;
+//     border-left:none;
+//     border-top:none;
+//     &:hover {
+//         background: $grayishBlue;
+//     }
+// }
+
+.terms {
+    margin: 0 25px;
+    font-size: 10px;
+    color: $grayishBlue;
+    .terms__span {
+        text-decoration: none;
+        color: $red;
+        font-weight: 700;
+    }
+}
+
+
+.visible {
+    display: block;
+}
+
+// Desktop
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+    }
+    .form {
+        width: 540px;
+    }
+    .trial {
+        margin: 0 115px;
+    }
+}
