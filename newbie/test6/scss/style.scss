@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import 'vars';
+@import 'response';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+
+html,body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: $PaleBlue;
+}
+
+.container {
+    max-width: 450px;
+    // height: 697px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.mainImg {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.h1, h1 {
+    margin: 60px 0 35px 0;
+    font-size: 25px;
+    font-weight: 900;
+    color: $DarkBlue;
+}
+
+p {
+    color: $DesaturatedBlue;
+    margin: 0 80px;
+    line-height: 20px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: $VeryPaleBlue;
+    margin: 20px 48px 32px 48px;
+    border-radius: 13.5px;
+}
+
+.plan__header {
+    margin-left: 20px;
+    flex: 1;
+}
+.title {
+    font-weight: 700;
+    color: $DarkBlue;
+}
+.subtitle {
+    color: $DesaturatedBlue;
+}
+.plan__btn {
+    justify-content: right;
+}
+.plan__link {
+    color: $BrightBlue;
+    font-weight: 700;
+}
+
+.plan__link:hover {
+    text-decoration: none;
+    color: hsl(245, 54%, 55%);
+}
+
+.submitButton {
+    margin: 0 48px;
+    text-align: center;
+    padding-bottom: 20px;
+    .submit {
+        display: block;
+        text-decoration: none;
+        background: $BrightBlue;
+        padding: 15px;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 7px 7px rgba(182, 182, 182, 0.75);
+        margin-bottom: 40px;
+        &:hover {
+            background: hsl(245, 54%, 55%);
+        }
+    }
+    .cancel {
+        color: $DesaturatedBlue;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+            color: $DarkBlue;
+        }
+
+    }
+}

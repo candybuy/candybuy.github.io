@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@media (max-width: 667.98px) {
+  .container {
+    width: 327px;
+  }
+  h1 {
+    margin: 42px 0 33px 0;
+  }
+  p {
+    margin: 0 40px !important;
+  }
+  .plan {
+    margin: 24px !important;
+  }
+  .title {
+    font-size: 13px;
+  }
+  .subtitle {
+    font-size: 13px;
+  }
+  .plan__link {
+    font-size: 13px;
+  }
+  .submitButton {
+    margin: 24px !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: hsl(225deg, 100%, 94%);
+}
+
+.container {
+  max-width: 450px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mainImg {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.h1, h1 {
+  margin: 60px 0 35px 0;
+  font-size: 25px;
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+
+p {
+  color: hsl(224deg, 23%, 55%);
+  margin: 0 80px;
+  line-height: 20px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background: hsl(225deg, 100%, 98%);
+  margin: 20px 48px 32px 48px;
+  border-radius: 13.5px;
+}
+
+.plan__header {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.title {
+  font-weight: 700;
+  color: hsl(223deg, 47%, 23%);
+}
+
+.subtitle {
+  color: hsl(224deg, 23%, 55%);
+}
+
+.plan__btn {
+  justify-content: right;
+}
+
+.plan__link {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+
+.plan__link:hover {
+  text-decoration: none;
+  color: hsl(245deg, 54%, 55%);
+}
+
+.submitButton {
+  margin: 0 48px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.submitButton .submit {
+  display: block;
+  text-decoration: none;
+  background: hsl(245deg, 75%, 52%);
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 7px rgba(182, 182, 182, 0.75);
+  margin-bottom: 40px;
+}
+.submitButton .submit:hover {
+  background: hsl(245deg, 54%, 55%);
+}
+.submitButton .cancel {
+  color: hsl(224deg, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+.submitButton .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}/*# sourceMappingURL=style.css.map */
