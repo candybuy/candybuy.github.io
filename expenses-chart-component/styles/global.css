@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    max-width: var(--maxWidthDesktop);
+    height: 100vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    background-color: var(--cream);
+}
+
+footer {
+    padding: 1rem;
+    font-size: 60%;
+    text-align: center;
+    color: var(--mediumBrown);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--darkBrown);
+}
