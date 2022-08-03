@@ -10,10 +10,6 @@
 #### Screenshot
 ![Mobile view](./design/mobile-design.jpg)
 
-#### Run project
-```
-# Just a local development server
-```
 
 #### Built with
 - Semantic HTML5 markup
