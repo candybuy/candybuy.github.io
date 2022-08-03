@@ -1,4 +1,4 @@
-## Rating modal
+## Expenses chart component
 [Github Pages live](https://candybuy.github.io/expenses-chart-component//) | [Frontend Mentor solution](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt)
 
 #### User flow
