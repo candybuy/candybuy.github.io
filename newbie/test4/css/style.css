@@ -103,39 +103,76 @@ html, body {
   padding: 0 10px 10px 10px;
 }
 
-.content-show {
+.open {
   display: block;
 }
 
+.fadeIn {
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 0.5s;
+          animation: fadeOut 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 920px;
     height: 509px;
   }
-
   .container__faq {
     width: 444px;
     margin-left: 476px;
   }
-
   .h1 {
     text-align: left;
   }
-
   .menu {
     margin-left: 0px;
   }
-
   .container__image {
     left: -62px;
     top: 81px;
   }
-
   .woman {
     position: relative;
     width: 400px;
   }
-
   .wooman_shadow {
     position: relative;
     top: 68px;
