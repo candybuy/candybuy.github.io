@@ -7,8 +7,9 @@
 #### Screenshot
 ![Mobile preview](./designs/mobileView.JPG)
 
+
 #### Links
-- [Github Pages live](https://github.com/candybuy/candybuy.github.io/single-price-grid-component)
+- [Github Pages live](https:/candybuy.github.io/single-price-grid-component/)
 - [Frontend Mentor solution](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 
 #### Run project
