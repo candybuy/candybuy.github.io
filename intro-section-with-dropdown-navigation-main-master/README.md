@@ -14,7 +14,7 @@ Here is the link of the challange-
 https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5
 
 Here is the solution site url-
-https://drougnov.github.io/intro-section-with-dropdown-navigation-master/
+https://candybuy.github.io/intro-section-with-dropdown-navigation-main-master/
 
 ## Built with
 
@@ -25,12 +25,6 @@ https://drougnov.github.io/intro-section-with-dropdown-navigation-master/
 -CSS Grid
 
 -Javascript
-
-## Author
-
-Facebook -[Biplob Barua Rocky] https://www.facebook.com/ANT1D0t35
-
-Frontend Mentor - https://www.frontendmentor.io/profile/Drougnov
 
 ### Any suggestion
 
