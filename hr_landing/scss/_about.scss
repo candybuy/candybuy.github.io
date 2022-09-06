@@ -1,0 +1,310 @@
+.about {
+    background: #FAFCFD;
+    display: flex;
+    justify-content: center;
+}
+.about__container {
+    max-width: $contain;
+    position: relative;
+    .star {
+        // width: 36px;
+        // height: 36px;
+        // display: inline-block;
+        position: absolute;
+        top: 47px;
+        left: -100px;
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+
+.about-up {
+    // justify-content: space-between;
+    // align-items: center;
+}
+.about-up__left {
+    max-width: 500px;
+    margin: 155px 0;
+    position: relative;
+    .mark {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #0E84DA;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        padding: 8px 24px;
+        background: rgba(14, 132, 218, 0.08);
+        border-radius: 60px;
+        margin-bottom: 20px;
+
+    }
+    h2 {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 50px;
+    }
+    .p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #4A4F5C;
+        margin-bottom: 20px;
+    }
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #4A4F5C;
+    }
+    .linear {
+        position: absolute;
+        top: 240px;
+        left: 380px;
+        width: 172px;
+        height: 172px;
+    }
+    .star {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 450px;
+        left: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.about-up__right {
+    background-image: url(../images/about/background.png);
+    margin: 100px 0;
+    width: 540px;
+    position: relative;
+    margin-left: 70px;
+    .card {
+        background: #FFFFFF;
+        max-width: 221px;
+        max-height: 174px;
+        box-shadow: 0px 12px 24px rgba(59, 62, 69, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        .h2 {
+            // display: inline-block;
+            font-family: $Raleway;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0em;
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            margin-bottom: 12px;
+        }
+        a {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #0E84DA;
+            &::after {
+                content: url(../images/about/galochkasvg.svg);
+                position: relative;
+                top: 7px;
+            }
+        }
+    }
+    .card-1 {
+        transform: rotate(-2deg);
+        position: absolute;
+        top: 79px;
+        .Webkassa {
+            &::before {
+                content: url(../images/about/webkassa.svg);
+                position: relative;
+                top: 6px;
+                right: 6px;
+            }
+        }
+    }
+    .card-2 {
+        transform: rotate(2deg);
+        position: absolute;
+        top: 20px;
+        right: 0;
+        .Smartcontract {
+            &::before {
+                content: url(../images/about/smartcontract.svg);
+                position: relative;
+                top: 6px;
+                right: 6px;
+            }
+        }
+    }
+    .card-3 {
+        transform: rotate(2deg);
+        position: absolute;
+        top: 250px;
+        .WorkPace {
+            &::before {
+                content: url(../images/about/workpace.svg);
+                position: relative;
+                top: 6px;
+                right: 6px;
+            }
+        }
+    }
+    .card-4 {
+        transform: rotate(-2deg);
+        position: absolute;
+        top: 200px;
+        right: 0;
+        .bicloud {
+            &::before {
+                content: url(../images/about/bicloud.svg);
+                position: relative;
+                top: 6px;
+                right: 6px;
+            }
+        }
+    }
+}
+
+
+// ------------------------- MIDDLE --------------------------------
+
+.about-middle {
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.about-middle__content {
+    width: 540px;
+    text-align: center;
+    .p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #4A4F5C;
+    }
+    .number {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #0E84DA;
+    }
+}
+
+// ------------------------- BOTTOM --------------------------------
+
+.about-bottom {
+    h2 {
+        text-align: center;
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 95px;
+    }
+}
+.about-bottom__content {
+    justify-content: center;
+    margin-bottom: 100px;
+    .item {
+        width: 160px;
+        height: 160px;
+        background: #0E84DA;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 21px;
+        position: relative;
+        .p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+    .item-1{
+        transform: rotate(-3deg);
+        .p {
+            position: absolute;
+            top: 33%;
+        }
+    }
+    .item-2{
+        transform: rotate(3deg);
+        .p {
+            position: absolute;
+            top: 33%;
+        }
+    }
+    .item-3{
+        transform: rotate(-3deg);
+        .p {
+            position: absolute;
+            top: 33%;
+            left: 20%;
+        }
+    }
+    .item-4{
+        transform: rotate(3deg);
+        .p {
+            position: absolute;
+            top: 33%;
+        }
+    }
+    .gray {
+        background: #F4F6F8;
+        margin-right: 0;
+        color: #4A4F5C;
+        .text {
+            position: absolute;
+            top: 30%;
+            left: 13%;
+            .p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #4A4F5C;
+                :first-child {
+                    padding-top: 44px;
+                }
+            }
+            .number {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                color: #0E84DA;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.header-desc {
+    background-image: url(../images-desc/header-desc/background.png);
+    background-size: cover;
+    .header__container {
+        .header__content {
+            padding-top: 115px;
+            h1 {
+            }
+            p {
+                padding-bottom: 90px;
+            }
+            .header__scroll {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

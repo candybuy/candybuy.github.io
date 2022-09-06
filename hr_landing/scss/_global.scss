@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $PTRootUI;
+}
+
+main {
+    // display: flex;
+    // justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row{
+	// margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col{
+	// margin-left: 10px;
+	// margin-right: 10px;
+	box-sizing: border-box;
+}
+

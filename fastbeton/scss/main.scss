@@ -1,0 +1,35 @@
+@import "vars";
+@import "fonts";
+@import "global";
+@import "./index-scss/header";
+@import "./index-scss/offer";
+// @import "./index-scss/edge";
+@import "./index-scss/edge";
+@import "./index-scss/prod";
+@import "./index-scss/form";
+@import "./index-scss/about";
+@import "./index-scss/pairs";
+@import "./index-scss/footer";
+
+
+// DESCRIPTION
+@import "./desc-scss/header-desc";
+@import "./desc-scss/about-desc";
+@import "./desc-scss/proof-desc";
+
+// CATALOG
+@import "./cat-scss/header-cat";
+@import "./cat-scss/switch";
+
+// CARD
+@import "./card-scss/header-card";
+@import "./card-scss/good-card";
+
+
+// SERVICES
+@import "./serv-scss/header-serv";
+@import "./serv-scss/service";
+
+// CONTACTS
+@import "./cont-scss/header-cont";
+@import "./cont-scss/contact";

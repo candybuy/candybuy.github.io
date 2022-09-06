@@ -1,0 +1,95 @@
+.proof {
+    margin-bottom: 110px;
+    .proof__container {
+        h2 {
+            font-family: $DINCondensed;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 56px;
+            color: #151515;
+            margin-bottom: 22px;
+        }
+        .linear {
+            margin-bottom: 66px;
+        }
+        .swiper-proof {
+            overflow: hidden;
+            .proof__content {
+                .card {
+    
+                }
+            }
+        }
+    }
+}
+
+
+.swiper-pagination {
+    padding-top: 35px !important;
+    position: static !important;
+}
+
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #898989;
+    // opacity: .2;
+    margin: 0 5px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    -webkit-transition: opacity .5s, background-color .5s, width .5s;
+    -o-transition: opacity .5s, background-color .5s, width .5s;
+    transition: opacity .5s, background-color .5s, width .5s;
+    -webkit-transition-delay: .5s, .5s, 0s;
+         -o-transition-delay: .5s, .5s, 0s;
+            transition-delay: .5s, .5s, 0s;
+}
+    
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #898989;
+    width: 35.88px;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+}
+
+@media screen and (max-width: 600px) {
+    .proof {
+        margin-bottom: 55px;
+        .proof__container {
+            padding: 0 30px;
+            h2 {
+                font-family: $DINCondensed;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 56px;
+                color: #151515;
+                margin-bottom: 12px;
+            }
+            .linear {
+                margin-bottom: 33px;
+            }
+            .proof__content {
+                .card {
+    
+                }
+            }
+        }
+    }
+}
+
+ /* the slides */
+ .slick-slide {
+    margin: 0 15px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -15px;
+}

@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap);
+
+@font-face {
+	font-family: 'DINCondensed';
+	src:
+		url('../fonts/din-condensed/DINCondensed-Regular.woff2') format('woff2'),
+		url('../fonts/din-condensed/DINCondensed-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansCondensed';
+	src:
+		url('../fonts/open-sans-condensed/OpenSansCondensed-Light.woff2') format('woff2'),
+		url('../fonts/open-sans-condensed/OpenSansCondensed-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Din2014';
+	src:
+		url('../fonts/din2014/DIN2014-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

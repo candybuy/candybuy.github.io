@@ -1,0 +1,85 @@
+.conditions {
+    display: flex;
+    justify-content: center;
+    background: #FAFCFD;
+}
+.conditions__container {
+    margin-top: 100px;
+    max-width: $contain;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .chair {
+        background-blend-mode: multiply;
+        position: relative;
+        // position: absolute;
+        right: 100px;
+        top: 150px;
+        img {
+        }
+    }
+    .star-simple {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        img {
+            
+        }
+    }
+    .content {
+        max-width: 635px;
+        position: relative;
+        margin-bottom: 100px;
+        .star {
+            position: absolute;
+            right: 10px;
+            img{}
+        }
+        .mark {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #F1553F;
+            padding: 8px 24px;
+            background: rgba(241, 85, 63, 0.08);
+            border-radius: 60px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 48px;
+            color: #3B3E45;
+            margin-bottom: 50px;
+        }
+        .p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: #4A4F5C;
+            margin-bottom: 50px;
+        }
+        .content__cards {
+            .card {
+                img {
+                    margin-bottom: 20px;
+                }
+                width: calc(100%/2);
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #4A4F5C;
+                }
+                
+            }  
+        }
+    }
+}

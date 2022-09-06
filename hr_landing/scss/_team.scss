@@ -1,0 +1,80 @@
+.team {
+    display: flex;
+    justify-content: center;
+    background: #FAFCFD;
+}
+.team__container {
+    max-width: $contain;
+    text-align: center;
+    .mark {
+        display: inline-block;
+        padding: 8px 24px;
+        background: rgba(43, 194, 58, 0.08);
+        border-radius: 60px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #2BC23A;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 100px;
+    }
+    .content {
+        margin-top: 30px;
+        margin-bottom: 100px;
+        text-align: start;
+        justify-content: space-between;
+        .card {
+            padding: 40px 30px;
+            background: #FFFFFF;
+            border-radius: 32px;
+            width: calc(100%/2 - 15px * 2);
+            // margin: 15px;
+            .avatar {
+                margin-bottom: 20px;
+            }
+            .title {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #3B3E45;
+                margin-bottom: 20px;
+            }
+            .subtitle {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #4A4F5C;
+                margin-bottom: 20px;
+            }
+            .p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                color: #4A4F5C;
+                margin-bottom: 20px;
+            }
+            .view {
+            }
+            &:nth-child(3) {
+                margin-top: 30px;
+            }
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}

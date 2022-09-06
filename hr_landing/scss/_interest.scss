@@ -1,0 +1,79 @@
+.interest {
+    display: flex;
+    justify-content: center;
+}
+.interest__container {
+    max-width: $contain;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    .smile {
+        position: absolute;
+        top: 37%;
+        right: -8%;
+    }
+    .star-simple {
+        position: absolute;
+        top: 74%;
+        left: -8%;
+    }
+    .mark {
+        display: inline-block;
+        padding: 8px 24px;
+        background: rgba(241, 85, 63, 0.08);
+        border-radius: 60px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #F1553F;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 72px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        .card {
+            text-align: start;
+            max-width: 445px;
+            padding: 30px;
+            &:nth-child(4) {
+                position: relative;
+                bottom: 60px;
+            }
+            &:last-child {
+                position: relative;
+                bottom: 100px;
+            }
+            img {
+                margin-bottom: 15px;
+            }
+            .h3 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #3B3E45;
+                margin-bottom: 15px;
+            }
+            .p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #4A4F5C;
+            }
+        }
+    }
+}

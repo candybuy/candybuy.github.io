@@ -1,0 +1,92 @@
+.header {
+    box-shadow: 0px 0px 64px rgba(59, 71, 103, 0.08);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .header__logo {
+        img {
+            width: 157px;
+            height: 32px;
+        }
+    }
+    .header__button {
+        a {
+            display: block;
+            padding: 12px 24px;
+            border-radius: 42px;
+            background: rgba(43, 194, 58, 0.05);
+            color: #2BC23A;
+            font-weight: 700;
+            line-height: 22px;
+            &:hover {
+                background: rgba(43, 194, 58, 0.25);
+            }
+        }
+    }
+    
+}
+
+.header__menu {
+    font-size: 14px;
+}
+
+.header__menu {
+    .header__list {
+        display: flex;
+        list-style-type: none;
+        .header__item {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            margin-right: 15px;
+            a {
+                font-size: 14px;
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.anim {
+    display: inline-block;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    animation: anim 0.32s linear infinite;
+    background: no-repeat 50% 50% / 100% 100%;
+}
+@keyframes anim {
+    0%, 100% {
+        background-image: url(../images/header/fire/anim1.png);
+    }
+    12.5% {
+        background-image: url(../images/header/fire/anim2.png);
+    }
+    25% {
+        background-image: url(../images/header/fire/anim3.png);
+    }
+    37.5% {
+        background-image: url(../images/header/fire/anim4.png);
+    }
+    50% {
+        background-image: url(../images/header/fire/anim5.png);
+    }
+    62.5% {
+        background-image: url(../images/header/fire/anim6.png);
+    }
+    75% {
+        background-image: url(../images/header/fire/anim7.png);
+    }
+    82.5% {
+        background-image: url(../images/header/fire/anim8.png);
+    }
+}
+
+
+
+// HEADER ENDS

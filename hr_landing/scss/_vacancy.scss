@@ -1,0 +1,193 @@
+.vacancy {
+    display: flex;
+    justify-content: center;
+}
+.vacancy__container {
+    max-width: $contain;
+    text-align: center;
+    position: relative;
+    .smile {
+        position: absolute;
+        top: 100px;
+        left: -68px;
+        img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+    .mark {
+        margin-top: 100px;
+        display: inline-block;
+        padding: 8px 24px;
+        color: #2BC23A;
+        background: rgba(43, 194, 58, 0.08);
+        border-radius: 60px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 100px;
+    }
+    // .star {
+    //     position: absolute;
+    //     right: -74px;
+    //     bottom: 100px;
+    //     img {
+    //         width: 70px;
+    //         height: 70px;
+    //     }
+    // }
+}
+
+.vacancy__content {
+    text-align: start;
+    gap: 30px 5px;
+    margin-bottom: 100px;
+
+    .card {
+        width: 350px;
+        height: 182px;
+        left: 165px;
+        top: 308px;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 24px #E5EDF1;
+        border-radius: 16px;
+        .card__content {
+            padding: 30px;
+            &::after {
+                content: "";
+                display: inline-block;
+                margin-right: 10px;
+                height: 42px;
+                width: 42px;
+                background: url(../images/vacancy/arrow.png) center no-repeat;
+                background-size: contain;
+                position: relative;
+                left: 85%;
+                bottom: 87px;
+            }
+            .p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #4A4F5C;
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+                &:last-child {
+                    margin-top: 15px;
+                    &::before {
+                        content: url(../images/vacancy/geo.svg);
+                        position: relative;
+                        top: 6px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .h3 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 36px;
+                color: #3B3E45;
+            }
+        }
+        &:hover {
+            border: 2px solid #2BC23A;
+            box-shadow: 0px 12px 24px #E5EDF1;
+            ::after {
+                background: url(../images/vacancy/arrow_green.png) center no-repeat;
+            }
+            .h3 {
+                color: #2BC23A;
+            }
+        }
+        &:active {
+            background: #2BC23A;
+            ::after {
+                background: url(../images/vacancy/arrow_white.png) center no-repeat;
+            }
+            .p, .h3 {
+                color: #FFFFFF;
+            }
+            .p {
+                &:last-child {
+                    &::before {
+                        content: url(../images/vacancy/geo_white.svg);
+                    }
+                }
+            }
+        }
+    }
+    .star {
+        position: absolute;
+        right: -74px;
+        bottom: 330px;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+
+
+// GREEN BOX
+
+.green-box {
+    background: #2BC23A;
+    border-radius: 32px;
+    padding: 32px 62px;
+    text-align: start;
+    position: relative;
+    margin-bottom: 100px;
+    &::before {
+        content:  url(../images/vacancy/linear.svg);
+        position: absolute;
+        top: 50px;
+        left: -50px;
+    }
+    &::after {
+        content: url(../images/vacancy/male.png);
+        position: absolute;
+        top: -24px;
+        right: 66px;
+    }
+    .h2 {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    .p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    .header__button {
+        a {
+            display: inline-block;
+            padding: 16px 24px;
+            background: #FFFFFF;
+            border-radius: 42px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            color: #2BC23A;
+        }
+    }
+}
