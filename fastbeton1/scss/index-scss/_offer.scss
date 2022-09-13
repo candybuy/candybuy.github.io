@@ -1,0 +1,370 @@
+.offer {
+    margin: 110px 0;
+    .offer__container {
+        h2 {
+            font-family: $DINCondensed;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 56px;
+            color: #151515;
+            margin-bottom: 22px;
+        }
+        .linear {
+            margin-bottom: 66px;
+        }
+    
+        .offer__content {
+            justify-content: space-between;
+            overflow: hidden;
+            .offer-card {
+                width: calc(100%/2 - 15px);
+            }
+            .stairs {
+                background-image: url(../images/offer/stairs.jpg);
+                margin-right: 0px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, #151515 110.69%, rgba(21, 21, 21, 0.5) 110.69%);;
+                    z-index: 2;
+                }
+                span {
+                    position: absolute;
+                    bottom: 48px;
+                    left: 52px;
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 50px;
+                    line-height: 50px;
+                    color: #FFFFFF;
+                    z-index: 100;
+                }
+            }
+            .offer__content-right {
+                .content-right-up {
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+                    .right-up-card {
+                        width: calc(100%/2 - 15px);
+                        height: 300px;
+                    }
+                    .fbg {
+                        background-image: url(../images/offer/fbs.jpg);
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, #151515 110.69%, rgba(21, 21, 21, 0.5) 110.69%);;
+                            z-index: 2;
+                        }
+                        span {
+                            position: absolute;
+                            bottom: 48px;
+                            left: 38px;
+                            font-family: $DINCondensed;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 50px;
+                            line-height: 50px;
+                            color: #FFFFFF;
+                            z-index: 100;
+                        }
+                    }
+                    .jumpers {
+                        background-image: url(../images/offer/jumpers.jpg);
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, #151515 110.69%, rgba(21, 21, 21, 0.5) 110.69%);;
+                            z-index: 2;
+                        }
+                        span {
+                            position: absolute;
+                            bottom: 48px;
+                            left: 38px;
+                            font-family: $DINCondensed;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 50px;
+                            line-height: 50px;
+                            color: #FFFFFF;
+                            z-index: 100;
+                        }
+                    }
+                }
+                .piles {
+                    width: 630px;
+                    height: 300px;
+                    background-image: url(../images/offer/piles.jpg);
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, #151515 110.69%, rgba(21, 21, 21, 0.5) 110.69%);;
+                        z-index: 2;
+                    }
+                    span {
+                        position: absolute;
+                        bottom: 48px;
+                        left: 38px;
+                        font-family: $DINCondensed;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 50px;
+                        line-height: 50px;
+                        color: #FFFFFF;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+    .offer {
+        .offer__container {
+            .offer__content {
+                .stairs {
+                    position: relative;
+                    height: 500px;
+                }
+                .offer__content-right {
+                    .content-right-up {
+                        .right-up-card {
+                            // height: 300px;
+                            height: 235px;
+                        }
+                        .fbg {
+                            position: relative;
+                        }
+                        .jumpers {
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 48px;
+                                left: 30px;
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                    .piles {
+                        height: 235px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .offer {
+        margin: 110px 0;
+        .offer__container {
+            .offer__content {
+                .offer-card {
+                    width: calc(100%/2 - 10px);
+                }
+                .stairs {
+                    height: 375px;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        bottom: 38px;
+                        left: 52px;
+                    }
+                }
+                .offer__content-right {
+                    .content-right-up {
+                        // justify-content: space-between;
+                        margin-bottom: 15px;
+                        .right-up-card {
+                            width: calc(100%/2 - 10px);
+                            height: 180px;
+                        }
+                        .fbg {
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 37px;
+                                left: 38px;
+                            }
+                        }
+                        .jumpers {
+                            background-image: url(../images/offer/jumpers.jpg);
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 37px;
+                                left: 12px;
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                    .piles {
+                        width: 630px;
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .offer {
+        margin: 110px 0;
+        .offer__container {
+            .offer__content {
+                .offer-card {
+                    width: calc(100%/2 - 10px);
+                }
+                .stairs {
+                    height: 325px;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        bottom: 22px;
+                        left: 22px;
+                        font-size: 35px;
+                    }
+                }
+                .offer__content-right {
+                    .content-right-up {
+                        // justify-content: space-between;
+                        margin-bottom: 15px;
+                        .right-up-card {
+                            width: calc(100%/2 - 10px);
+                            height: 152.5px;
+                        }
+                        .fbg {
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 8px;
+                                left: 12px;
+                                font-size: 25px;
+                            }
+                        }
+                        .jumpers {
+                            background-image: url(../images/offer/jumpers.jpg);
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 8px;
+                                left: 12px;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .piles {
+                        width: 630px;
+                        height: 152.5px;
+                        span {
+                            position: absolute;
+                            bottom: 22px;
+                            left: 22px;
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .offer {
+        margin: 55px 0;
+        .offer__container {
+            padding: 0 30px;
+            h2 {
+                font-family: $DINCondensed;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 56px;
+                color: #151515;
+                margin-bottom: 22px;
+            }
+            .linear {
+                margin-bottom: 46px;
+            }
+            .offer__content {
+                .offer-card {
+                    width: calc(100%);
+                }
+                .stairs {
+                    margin-bottom: 20px;
+                }
+                .offer__content-right {
+                    .content-right-up {
+                        // justify-content: space-between;
+                        margin-bottom: 20px;
+                        // margin-bottom: 15px;
+                        .right-up-card {
+                            width: calc(100%);
+                            // height: 152.5px;
+                        }
+                        .fbg {
+                            position: relative;
+                            margin-bottom: 20px;
+                            span {
+                                position: absolute;
+                                bottom: 8px;
+                                left: 12px;
+                                font-size: 25px;
+                            }
+                        }
+                        .jumpers {
+                            background-image: url(../images/offer/jumpers.jpg);
+                            position: relative;
+                            span {
+                                position: absolute;
+                                bottom: 8px;
+                                left: 12px;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .piles {
+                        width: 630px;
+                        height: 152.5px;
+                        span {
+                            position: absolute;
+                            bottom: 22px;
+                            left: 22px;
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

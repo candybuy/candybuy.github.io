@@ -12,12 +12,16 @@ html {
 
 body {
     font-family: $PTRootUI;
+    font-weight: 400;
 }
 
-main {
-    // display: flex;
-    // justify-content: center;
+[class*="__container"] {
+    max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
+
+
 
 a {
     text-decoration: none;
@@ -35,3 +39,54 @@ a {
 	box-sizing: border-box;
 }
 
+// reset
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li{
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul,ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-left: 0;
+}
+
+strong{
+	font-weight: normal;
+}
+
+em{
+	font-style: normal;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}

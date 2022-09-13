@@ -1,0 +1,246 @@
+.team {
+    background: #FAFCFD;
+    padding: 100px 0;
+    .team__container {
+        text-align: center;
+        padding: 0 15px;
+        .mark {
+            display: inline-block;
+            padding: 8px 24px;
+            background: rgba(43, 194, 58, 0.08);
+            border-radius: 60px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #2BC23A;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 48px;
+            color: #3B3E45;
+            margin-bottom: 100px;
+        }
+        .content {
+            margin-top: 30px;
+            text-align: start;
+            justify-content: space-between;
+            // gap: 30px;
+            .card {
+                padding: 40px 30px;
+                background: #FFFFFF;
+                border-radius: 32px;
+                width: 48.648%;
+                .avatar {
+                    margin-bottom: 20px;
+                }
+                .title {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #3B3E45;
+                    margin-bottom: 20px;
+                }
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #4A4F5C;
+                    margin-bottom: 20px;
+                }
+                .p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #4A4F5C;
+                    margin-bottom: 20px;
+                }
+                .view {
+                }
+                &:nth-child(3) {
+                    margin-top: 30px;
+                }
+                &:last-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        background: #FAFCFD;
+        padding: 100px 0;
+        .team__container {
+            text-align: center;
+            padding: 0 15px;
+            .mark {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(43, 194, 58, 0.08);
+                border-radius: 60px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #2BC23A;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 48px;
+                color: #3B3E45;
+                margin-bottom: 100px;
+            }
+            .content {
+                margin-top: 30px;
+                text-align: start;
+                justify-content: space-between;
+                // gap: 30px;
+                .card {
+                    padding: 40px 30px;
+                    background: #FFFFFF;
+                    border-radius: 32px;
+                    width: 100%;
+                    .avatar {
+                        margin-bottom: 20px;
+                    }
+                    .title {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #3B3E45;
+                        margin-bottom: 20px;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #4A4F5C;
+                        margin-bottom: 20px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #4A4F5C;
+                        max-width: 550px;
+                        margin-bottom: 20px;
+                    }
+                    .view {
+                    }
+                    &:nth-child(2) {
+                        margin-top: 30px;
+                    }
+                    &:nth-child(3) {
+                        margin-top: 30px;
+                    }
+                    &:last-child {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500.98px) {
+    .team {
+        background: #FAFCFD;
+        padding: 50px 0;
+        .team__container {
+            text-align: center;
+            padding: 0 15px;
+            .mark {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(43, 194, 58, 0.08);
+                border-radius: 60px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #2BC23A;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #3B3E45;
+                margin-bottom: 50px;
+            }
+            .content {
+                margin-top: 15px;
+                text-align: start;
+                justify-content: space-between;
+                // gap: 30px;
+                .card {
+                    padding: 20px 15px;
+                    background: #FFFFFF;
+                    border-radius: 32px;
+                    // width: 48.648%;
+                    .avatar {
+                        margin-bottom: 20px;
+                    }
+                    .title {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #3B3E45;
+                        margin-bottom: 20px;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #4A4F5C;
+                        margin-bottom: 20px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #4A4F5C;
+                        margin-bottom: 20px;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 15px;
+                    }
+                    &:nth-child(3) {
+                        margin-top: 15px;
+                    }
+                    &:last-child {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

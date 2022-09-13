@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/header/logo.png">
+    <title>Document</title>
+    <style>
+        .sticky+.header__content {
+            padding-top: 229px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .sticky+.header__content {
+                padding-top: 195px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header header-desc">
+        <div class="header__title row" id="myHeader">
+            <a href="index.html" class="title__logo col">
+                <img src="images/header/logo.png" alt="logo">
+            </a>
+            <div class="title__middle col">
+                <div class="subtitle">FastBeton – Реализация товарного бетона и раствора</div>
+                <nav class="title__nav">
+                    <ul class="title__list row">
+                        <li class="title__item col">
+                            <a href="index.html">главная</a>
+                        </li>
+                        <li class="title__item col">
+                            <a href="description.html">о компании</a>
+                        </li>
+                        <li class="title__item col">
+                            <a href="catalog.html">каталог продукции</a>
+                        </li>
+                        <li class="title__item col">
+                            <a href="services.html">услуги</a>
+                        </li>
+                        <li class="title__item col">
+                            <a href="contacts.html">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="title__right col">
+                <div class="title__right-content">
+                    <a href="#" class="button title-btn">обратный звонок</a>
+                    <div class="title__phone">
+                        <a href="contacts.html" class="linkToPhone">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>
+                        <div class="phone mainPhone">+ 7 (777) 777-77-77<img src="images/header/vector.svg" alt="vector"
+                                class="vector"></div>
+                        <a href="contacts.html" class="phone noneShow">+7 (777) 134-24-02 <br> +7 (701)
+                            413-90-98</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">главная</a>
+                <a href="description.html">о компании</a>
+                <a href="catalog.html">каталог продукции</a>
+                <a href="services.html">услуги</a>
+                <a href="contacts.html">контакты</a>
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+
+        </div>
+        <div class="header__content">
+            <h1>О компании </h1>
+            <p>Наша компания основана в 2005 году до сих пор продолжает расширяться и развиваться.</p>
+            <div class="header__scroll">
+                <div class="title">SCROLL DOWN</div>
+                <img src="images/header/scroll-down.png" alt="scrol down" class="scroll__img">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-desc">
+            <div class="about__container">
+                <div class="about__content row">
+                    <div class="about-left col">
+                        <h2>О компании</h2>
+                        <img src="images-desc/about-desc/linear.png" alt="linear" class="linear">
+                        <div class="content__card row">
+                            <div class="subtitle col">Мини-описание. Это текст о компании. Он необходим для дальнейшего
+                                продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные. Мини-описание.
+                                Это текст о компании. Вам будет необходимо предоставить исходные данные. Мини-описание. Это
+                                текст о компании. </div>
+                            <div class="about-left__img col">
+                                <img src="images-desc/about-desc/left.png" alt="builder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right about__card col">
+                        <div class="content__card row">
+                            <div class="about-right__img col">
+                                <img src="images-desc/about-desc/right.png" alt="shit">
+                            </div>
+                            <div class="subtitle col">Мини-описание. Это текст о компании. Он необходим для дальнейшего
+                                продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные. Мини-описание.
+                                Это текст о компании. Вам будет необходимо предоставить исходные данные. Мини-описание. Это
+                                текст о компании. Мини-описание. Это текст о компании. Он необходим для дальнейшего
+                                продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные. Мини-описание.
+                                Это текст о компании. Вам будет необходимо предоставить исходные данные. Мини-описание. Это
+                                текст о компании. Мини-описание. Это текст о компании. Он необходим для дальнейшего
+                                продвижения Вашего сайта. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="edge">
+            <div class="edge__container">
+                <h2>Наши преимущества</h2>
+                <img src="images/offer/linear.png" alt="line" class="linear">
+
+                <div class="edge__content row">
+                    <div class="card col">
+                        <img src="images/edge/first.png" alt="Бетон">
+                        <div class="title">12 лет на рынке</div>
+                        <div class="subtitle">Это текст о компании. Он необходим для дальнейшего продвижения Вашего
+                            сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="card col">
+                        <img src="images/edge/second.png" alt="Два человека">
+                        <div class="title">Команда профессионалов</div>
+                        <div class="subtitle">Это текст о компании. Он необходим для дальнейшего продвижения Вашего
+                            сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="card col">
+                        <img src="images/edge/third.png" alt="Завод">
+                        <div class="title">Собственное производство</div>
+                        <div class="subtitle">Это текст о компании. Он необходим для дальнейшего продвижения Вашего
+                            сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </div>
+                    </div>
+                    <div class="card col">
+                        <img src="images/edge/fourth.png" alt="Балка">
+                        <div class="title">Высокая скорость исполнения</div>
+                        <div class="subtitle">Это текст о компании. Он необходим для дальнейшего продвижения Вашего
+                            сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prod">
+            <div class="prod__container">
+                <h2>Наше производство</h2>
+
+                <div class="prod__content row">
+                    <div class="content__left prod__card col">
+                        <img src="images/prod/linear.png" alt="linear" class="linear">
+                        <div class="subtitle">Постоянное увеличение мощностей производства позволяет нам занимать
+                            высокие позиции в конкурентной среде региона и быть в числе лидеров города</div>
+                        <img src="images/prod/content-left.png" alt="content left" class="content__left-img">
+                    </div>
+                    <div class="content__right prod__card">
+                        <img src="images/prod/content-right-up.png" alt="content right up" class="content__right-up">
+                        <div class="content__right-down row">
+                            <img src="images/prod/content-right-down-left.png" alt="content right down left"
+                                class="down-left down__card col">
+                            <img src="images/prod/content-right-down-right.png" alt="content right down right"
+                                class="down-right down__card col">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pairs">
+            <div class="pairs__container">
+                <h2>Наши партнеры</h2>
+                <img src="images/about/linear.png" alt="linear" class="linear">
+                <div class="swiper-pairs">
+                    <div class="pairs__content swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/pairs/METIHBEST.png" alt="METIHBEST" class="first first-reset">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/EVRAZ.png" alt="EVRAZ" class="second">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Магнитогорский.png" alt="Магнитогорский" class="third">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fourth">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fifth">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/METIHBEST.png" alt="METIHBEST" class="first first-reset">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/EVRAZ.png" alt="EVRAZ" class="second">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Магнитогорский.png" alt="Магнитогорский" class="third">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fourth">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fifth">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/METIHBEST.png" alt="METIHBEST" class="first first-reset">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/EVRAZ.png" alt="EVRAZ" class="second">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Магнитогорский.png" alt="Магнитогорский" class="third">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fourth">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pairs/Северсталь.png" alt="Северсталь" class="fifth">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination pag1"></div>
+            </div>
+        </section>
+
+        <section class="proof">
+            <div class="proof__container">
+                <h2>Сертификаты</h2>
+                <img src="images/about/linear.png" alt="linear" class="linear">
+                <div class="swiper-proof">
+                    <div class="proof__content swiper-wrapper">
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <!-- SECOND  -->
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <!-- THIRD  -->
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-caption="Optional caption">
+                            <a data-caption="Сертификат" data-fancybox="gallery"
+                                href="/images-desc/proof-desc/certificate.png">
+                                <img src="images-desc/proof-desc/certificate.png" alt="METIHBEST" class="certif__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination pag2"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__up row">
+                <div class="card col">
+                    <div class="title">Адрес:</div>
+                    <div class="subtitle geo">000001, Г. Нур-Султан, пр. Республики 15, ЖК <br> Венера, офис 25 </div>
+                </div>
+                <div class="card col">
+                    <div class="title title-phone">Телефон:</div>
+                    <a href="tel:+7 (777) 134-24-02" class="subtitle phone">+7 (777) 134-24-02</a>
+                    <a href="tel:+7 (701) 413-90-98" class="subtitle phone">+7 (701) 413-90-98</a>
+                </div>
+                <div class="card col">
+                    <div class="title title-mail">Почта:</div>
+                    <a href="mailto:infoexample@gmail.com" class="subtitle mail">infoexample@gmail.com</a>
+                </div>
+                <a href="#" class="btn col">обратный звонок</a>
+            </div>
+
+            <div class="footer__middle row">
+                <div class="card-left col">
+                    <div class="title">тоо "fastbeton"</div>
+                    <div class="subtitle">Часы работы: пн-пт с 09:00 до 18:00, обед с 12:30 до 13:30.</div>
+                </div>
+                <div class="card-second col">
+                    <div class="title">Навигация</div>
+                    <div class="card__content row">
+                        <div class="card__content-left col">
+                            <div class="wrapper row">
+                                <a href="index.html" class="item col">Главная</a>
+                                <a href="services.html" class="item col">Услуги</a>
+                            </div>
+                        </div>
+                        <div class="card__content-right col">
+                            <div class="wrapper row">
+                                <a href="description.html" class="item col">О компании</a>
+                                <a href="contacts.html" class="item col">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-third col">
+                    <div class="title">Каталог</div>
+                    <div class="card__content row">
+                        <div class="card__content-left col">
+                            <div class="wrapper row">
+                                <a href="#" class="item col">Плиты</a>
+                                <a href="#" class="item col">Кольца</a>
+                            </div>
+                        </div>
+                        <div class="card__content-middle col">
+                            <div class="wrapper row">
+                                <a href="#" class="item col">Перемычки</a>
+                                <a href="#" class="item col">Сваи</a>
+                            </div>
+                        </div>
+                        <div class="card__content-right col">
+                            <div class="wrapper row">
+                                <a href="#" class="item col">Другие товары</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-media col">
+                    <div class="media__content">
+                        <a href="twitter.com" class="twitter">
+                            <img src="images/footer/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="telegram.com" class="telegram">
+                            <img src="images/footer/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="instagram.com" class="instagram">
+                            <img src="images/footer/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="facebook.com" class="facebook">
+                            <img src="images/footer/facebook.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__down">
+                <div class="abc">ABC DESIGN</div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

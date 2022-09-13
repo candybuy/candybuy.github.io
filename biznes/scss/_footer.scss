@@ -1,0 +1,521 @@
+.footer {
+    padding: 100px 0;
+    background: #3B3E45;
+    .footer__container {
+        text-align: center;
+        .mark {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #2BC23A;
+            padding: 8px 24px;
+            background: rgba(43, 194, 58, 0.08);
+            border-radius: 60px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-bottom: 100px;
+        }
+        .footer__content {
+            justify-content: space-between;
+            .card {
+                width: 48.6486%;
+                padding: 40px 30px;
+                background: #32353C;
+                border-radius: 32px;
+                text-align: start;
+                .title {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+            }
+            .card-office {
+                .title {
+                    margin-bottom: 20px;
+                }
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                }
+                .city {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                    margin-top: 20px;
+                }
+            }
+            .card-contacts {
+                .title {
+                    margin-bottom: 45.5px;
+                }
+                .cont-middle {
+                    gap: 30px;
+                    margin-bottom: 45.5px;
+                    .middle-card {
+                        .middle__title {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                            margin-bottom: 5px;
+                        }
+                        .middle__link {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 32px;
+                            text-decoration-line: underline;
+                            color: #2BC23A;
+                        }
+                    }
+                }
+                .cont-bottom {
+                    gap: 30px;
+                    .bottom-card {
+                        padding: 10px 20px;
+                        background: rgba(255, 255, 255, 0.08);
+                        border-radius: 49px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                    }
+                    .bottom-left {
+                        &::before {
+                            content: url(../images/footer/instagram.svg);
+                            margin-right: 5px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .bottom-right {
+                        &::before {
+                            content: url(../images/footer/internet.svg);
+                            margin-right: 5px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .bottom-leftSmall {
+                        display: none;
+                        &::before {
+                            content: url(../images/footer/instagram.svg);
+                            margin-right: 5px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .bottom-rightSmall {
+                        display: none;
+                        &::before {
+                            content: url(../images/footer/internet.svg);
+                            margin-right: 5px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100.98px) {
+    .footer {
+        padding: 100px 0;
+        background: #3B3E45;
+        .footer__container {
+            text-align: center;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992.98px) {
+    .footer {
+        padding: 100px 0;
+        background: #3B3E45;
+        .footer__container {
+            text-align: center;
+            .footer__content {
+                .card-office {
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                    }
+                    .city {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                        margin-top: 20px;
+                    }
+                }
+                .card-contacts {
+                    .title {
+                        margin-bottom: 45.5px;
+                    }
+                    .cont-middle {
+                        gap: 30px;
+                        margin-bottom: 45.5px;
+                        .middle-card {
+                            .middle__title {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 28px;
+                                color: #FFFFFF;
+                                margin-bottom: 5px;
+                            }
+                            .middle__link {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 32px;
+                                text-decoration-line: underline;
+                                color: #2BC23A;
+                            }
+                        }
+                    }
+                    .cont-bottom {
+                        gap: 15px;
+                        .bottom-card {
+                            padding: 10px 10px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 49px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                        }
+                        .bottom-left {
+                            &::before {
+                                content: url(../images/footer/instagram.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                        .bottom-right {
+                            &::before {
+                                content: url(../images/footer/internet.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768.98px) {
+    .footer {
+        padding: 100px 0;
+        background: #3B3E45;
+        .footer__container {
+            text-align: center;
+            .mark {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #2BC23A;
+                padding: 8px 24px;
+                background: rgba(43, 194, 58, 0.08);
+                border-radius: 60px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 48px;
+                color: #FFFFFF;
+                margin-bottom: 100px;
+            }
+            .footer__content {
+                justify-content: center;
+                gap: 30px;
+                .card {
+                    width: 70%;
+                    padding: 40px 30px;
+                    background: #32353C;
+                    border-radius: 32px;
+                    text-align: start;
+                    .title {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                    }
+                }
+                .card-office {
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                    }
+                    .city {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                        margin-top: 20px;
+                    }
+                }
+                .card-contacts {
+                    .title {
+                        margin-bottom: 45.5px;
+                    }
+                    .cont-middle {
+                        justify-content: space-between;
+                        gap: 30px;
+                        margin-bottom: 45.5px;
+                        .middle-card {
+                            .middle__title {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 28px;
+                                color: #FFFFFF;
+                                margin-bottom: 5px;
+                            }
+                            .middle__link {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 15px;
+                                line-height: 32px;
+                                text-decoration-line: underline;
+                                color: #2BC23A;
+                            }
+                        }
+                    }
+                    .cont-bottom {
+                        gap: 30px;
+                        justify-content: space-between;
+                        .bottom-card {
+                            padding: 10px 10px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 49px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                        }
+                        .bottom-left {
+                            &::before {
+                                content: url(../images/footer/instagram.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                        .bottom-right {
+                            &::before {
+                                content: url(../images/footer/internet.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520.98px) {
+    .footer {
+        padding: 50px 0;
+        background: #3B3E45;
+        .footer__container {
+            text-align: center;
+            .mark {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #2BC23A;
+                padding: 8px 24px;
+                background: rgba(43, 194, 58, 0.08);
+                border-radius: 60px;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin-bottom: 50px;
+            }
+            .footer__content {
+                justify-content: center;
+                gap: 30px;
+                .card {
+                    width: 100%;
+                    padding: 40px 30px;
+                    background: #32353C;
+                    border-radius: 32px;
+                    text-align: start;
+                    .title {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                    }
+                }
+                .card-office {
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                    }
+                    .city {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                        margin-top: 20px;
+                    }
+                }
+                .card-contacts {
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                    .cont-middle {
+                        gap: 30px;
+                        margin-bottom: 45.5px;
+                        .middle-card {
+                            gap: 30px;
+                            margin-bottom: 20px;
+                            .middle__title {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #FFFFFF;
+                                margin-bottom: 5px;
+                            }
+                            .middle__link {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 32px;
+                                text-decoration-line: underline;
+                                color: #2BC23A;
+                            }
+                        }
+                    }
+                    .cont-bottom {
+                        gap: 30px;
+                        justify-content: inherit;
+                        .bottom-card {
+                            padding: 10px 20px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 50%;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                        }
+                        .bottom-left {
+                            display: none;
+                            &::before {
+                                content: url(../images/footer/instagram.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                        .bottom-right {
+                            display: none;
+                            &::before {
+                                content: url(../images/footer/internet.svg);
+                                margin-right: 5px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                        .bottom-leftSmall {
+                            display: block;
+                            &::before {
+                                content: url(../images/footer/instagram.svg);
+                                margin-right: 0px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                        .bottom-rightSmall {
+                            display: block;
+                            &::before {
+                                content: url(../images/footer/internet.svg);
+                                margin-right: 0px;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

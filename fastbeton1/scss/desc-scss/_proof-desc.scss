@@ -1,0 +1,136 @@
+.proof {
+    margin-bottom: 110px;
+
+    .proof__container {
+        h2 {
+            font-family: $DINCondensed;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 56px;
+            color: #151515;
+            margin-bottom: 22px;
+        }
+
+        .linear {
+            margin-bottom: 66px;
+        }
+
+        .swiper-proof {
+            overflow: hidden;
+
+            .proof__content {
+                .card {}
+            }
+        }
+    }
+}
+
+.fancybox__container {
+    max-width: 3000px;
+}
+
+
+.swiper-pagination {
+    padding-top: 35px !important;
+    position: static !important;
+}
+
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #898989;
+    // opacity: .2;
+    margin: 0 5px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: opacity .5s, background-color .5s, width .5s;
+    -o-transition: opacity .5s, background-color .5s, width .5s;
+    transition: opacity .5s, background-color .5s, width .5s;
+    -webkit-transition-delay: .5s, .5s, 0s;
+    -o-transition-delay: .5s, .5s, 0s;
+    transition-delay: .5s, .5s, 0s;
+}
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #898989;
+    width: 35.88px;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+// FANCY BOX
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+
+.fancybox__container {
+    --fancybox-bg: rgba(17, 6, 25, 0.85);
+}
+
+.fancybox__container .fancybox__content {
+    /* Create white border around the image */
+    box-sizing: content-box;
+    padding: 1rem;
+    background: #fff;
+
+    border-radius: 6px;
+    color: #374151;
+    box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+}
+
+.fancybox__caption {
+    max-width: 80%;
+
+    /* Prevent opacity change when dragging up/down */
+    --fancybox-opacity: 1;
+}
+
+.fancybox__nav {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .proof {
+        margin-bottom: 55px;
+
+        .proof__container {
+            padding: 0 30px;
+
+            h2 {
+                font-family: $DINCondensed;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 56px;
+                color: #151515;
+                margin-bottom: 12px;
+            }
+
+            .linear {
+                margin-bottom: 33px;
+            }
+
+            .proof__content {
+                .card {}
+            }
+        }
+    }
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 15px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -15px;
+}

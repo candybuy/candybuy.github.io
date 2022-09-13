@@ -1,0 +1,369 @@
+.footer {
+    background: #EFEFEF;
+    .footer__container {
+        .footer__up {
+            padding: 22px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #C0C0C0;
+            .card {
+                .title {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 38px;
+                    color: #797979;
+                    padding-left: 43px;
+                }
+                .subtitle {
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #151515;
+                    position: relative;
+                    padding-left: 43px;
+                }
+                .geo {
+                    &::before {
+                        content: url(../images/footer/geo.svg);
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                .title-phone {
+                    position: relative;
+                    &::before {
+                        content: url(../images/footer/phone.svg);
+                        position: absolute;
+                        left: 0;
+                        top: 33px;
+                    }
+                }
+                .phone {
+                    display: block;
+                }
+                .mail {
+                    &::before {
+                        content: url(../images/footer/mail.svg);
+                        position: absolute;
+                        left: 0;
+                        bottom: -8px;
+                    }
+                }
+            }
+            .btn {
+                display: inline-block;
+                border: 1px solid #151515;
+                border-radius: 2px;
+                padding: 9px 28px;
+                // text
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 0.05em;
+                color: #151515;
+                text-transform: uppercase;
+                &:hover {
+                    border: 1px solid #918d8d;
+                    color: #918d8d;
+                }
+            }
+        }
+        // MIDDLE
+        .footer__middle {
+            padding: 48px 0;
+            justify-content: space-between;
+            border-bottom: 1px solid #C0C0C0;
+            .card-left {
+                max-width: 244px;
+                .title {
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: #151515;
+                    margin-bottom: 8px;
+                }
+                .subtitle {
+                    font-family: $OpenSans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #666666;
+                }
+            }
+            .card-second {
+                width: 238px;
+                .title {
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #151515;
+                    margin-bottom: 10px;
+                }
+                .card__content {
+                    justify-content: space-between;
+                    .card__content-left {
+                        .wrapper {
+                            flex-direction: column;
+                            .item {
+                                font-family: $OpenSans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #797979;
+                            }
+                        }
+                    }
+                    .card__content-right {
+                        .wrapper {
+                            flex-direction: column;
+                            .item {
+                                font-family: $OpenSans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #797979;
+                            }
+                        }
+                    }
+                }
+            }
+            .card-third {
+                width: 382px;
+                .title {
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #151515;
+                    margin-bottom: 10px;
+                }
+                .card__content {
+                    justify-content: space-between;
+                    .card__content-left {
+                        .wrapper {
+                            flex-direction: column;
+                            .item {
+                                font-family: $OpenSans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #797979;
+                            }
+                        }
+                    }
+                    .card__content-middle {
+                        .wrapper {
+                            flex-direction: column;
+                            .item {
+                                font-family: $OpenSans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #797979;
+                            }
+                        }
+                    }
+                    .card__content-right {
+                        .wrapper {
+                            flex-direction: column;
+                            .item {
+                                font-family: $OpenSans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #797979;
+                            }
+                        }
+                    }
+                }
+            }
+            .card-media {
+                .media__content {
+                    align-items: center;
+                    .twitter {
+                        margin-right: 23px;
+                        cursor: pointer;
+                    }
+                    .telegram {
+                        margin-right: 23px;
+                        cursor: pointer;
+                    }
+                    .instagram {
+                        position: relative;
+                        top: 2px;
+                        margin-right: 23px;
+                        cursor: pointer;
+                    }
+                    .facebook {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    
+        .footer__down {
+            padding: 22px 0;
+            .abc {
+                font-family: $Din2014;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #666666;
+            }
+        }
+        
+    }
+}
+
+// RESPONSIVE 
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        .footer__container {
+            .footer__up {
+                .card {
+                    .title-mail {
+                        display: none;
+                    }
+                    .mail {
+                        display: none;
+                        &::before {
+                            content: url(../images/footer/mail.svg);
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            // MIDDLE
+            .footer__middle {
+                .card-left {
+                    max-width: 200px;
+                }
+                .card-second {
+                    display: none;
+                }
+                .card-media {
+                    margin-top: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        .footer__container {
+            .footer__up {
+                .card {
+                    .subtitle {
+                        width: 200px;
+                    }
+                    .title-phone {
+                        display: none;
+                        
+                    }
+                    .phone {
+                        display: none;
+                    }
+                }
+                .btn {
+                    display: inline-block;
+                    border: 1px solid #151515;
+                    border-radius: 2px;
+                    padding: 9px 12px;
+                    // text
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 0.05em;
+                    color: #151515;
+                    text-transform: uppercase;
+                }
+            }
+            // MIDDLE
+            .footer__middle {
+                padding: 48px 0 28px 0;
+                justify-content: space-between;
+                border-bottom: 1px solid #C0C0C0;
+                .card-left {
+                    max-width: 244px;
+                    .title {
+                        font-family: $DINCondensed;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                        color: #151515;
+                        margin-bottom: 8px;
+                    }
+                    .subtitle {
+                        font-family: $OpenSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #666666;
+                    }
+                }
+                .card-third {
+                    display: none;
+                }
+                .card-media {
+                    .media__content {
+                        align-items: center;
+                        .twitter {
+                            margin-right: 23px;
+                            cursor: pointer;
+                        }
+                        .telegram {
+                            margin-right: 23px;
+                            cursor: pointer;
+                        }
+                        .instagram {
+                            margin-right: 23px;
+                            cursor: pointer;
+                        }
+                        .facebook {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        
+            .footer__down {
+                padding: 22px 0;
+                .abc {
+                    font-family: $Din2014;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #666666;
+                }
+            }
+            
+        }
+    }
+}

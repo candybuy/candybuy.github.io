@@ -1,0 +1,139 @@
+.about-desc {
+    margin: 110px 0;
+    .about__container {
+        .about__content {
+            justify-content: space-between;
+            .about__card {
+
+            }
+            .about-left {
+                width: 29.457%;
+                h2 {
+                    font-family: $DINCondensed;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 54px;
+                    line-height: 56px;
+                    color: #151515;
+                    margin-bottom: 22px;
+                }
+                .linear {
+                    margin-bottom: 32px;
+                }
+                .content__card {
+                    .subtitle {
+                        max-width: 368px;
+                        font-family: $OpenSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 161%;
+                        color: #555555;
+                        margin-bottom: 63px;
+                    }
+                    .about-left__img {
+                    }
+                }
+            }
+            .about-right {
+                width: 66.89%;
+                .about-right__img {
+                    margin-bottom: 71px;
+                }
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 161%;
+                    color: #555555;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 992px) {
+    .about-desc {
+        .about__container {
+            .about__content {
+                .about-left {
+                    // width: calc(33% - 15px);
+                    h2 {
+                        font-size: 44px;
+                    }
+                    .content__card {
+                        .subtitle {
+                            line-height: 135%;
+                        }
+                    }
+                }
+                .about-right {
+                    .content__card {
+                        .subtitle {
+                            line-height: 135%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    .about-desc {
+        margin: 55px 0;
+        .about__container {
+            padding: 0 30px;
+            .about__content {
+                .about-left {
+                    width: 100%;
+                    h2 {
+                        font-size: 44px;
+                        line-height: 36px;
+                        margin-bottom: 12px;
+                    }
+                    .linear {
+                        margin-bottom: 22px;
+                    }
+                    .content__card {
+                        flex-direction: column-reverse;
+                        .subtitle {
+                            max-width: 600px;
+                            font-size: 16px;
+                            line-height: 110%;
+                            margin-top: 30px;
+                            padding-bottom: 20px;
+                            border-bottom: 3px solid #D3D3D3;
+                        }
+                        .about-left__img {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .about-right {
+                    width: 100%;
+                    .content__card {
+                        .about-right__img {
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        .subtitle {
+                            max-width: 600px;
+                            margin-left: 0px;
+                            font-size: 16px;
+                            line-height: 125%;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,271 @@
+.form {
+    background-image: url(../images/form/background.png);
+    background-size: cover;
+    margin-bottom: 110px;
+}
+
+.form__content {
+    padding-top: 156px;
+    margin-left: 143px;
+    padding-bottom: 130px;
+    h2 {
+        max-width: 687px;
+        font-family: $DINCondensed;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 22px;
+    }
+    .linear {
+        margin-bottom: 22px;
+    }
+    .subtitle {
+        max-width: 532px;
+        font-family: $OpenSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 161%;
+        color: #EFEFEF;
+        margin-bottom: 43px;
+    }
+    .form__block {
+        display: inline-block;
+        background: #3A3A3A;
+        padding: 10px;
+        .name {
+            outline: none;
+            border:none;
+            background-color:transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-radius: 2px;
+            // width: 212px;
+            // value
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 161%;
+            color: #B3B3B3;
+            padding-left: 15px;
+        }
+        span {
+            border: 1px solid #A7A7A7;
+            border-radius: 2px;
+            height: 43.5px;
+            margin: auto 0;
+        }
+        .number {
+            outline: none;
+            border:none;
+            background-image:none;
+            background-color:transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            opacity: 0.7;
+            border-radius: 2px;
+            padding-left: 21.5px;
+            color: #B3B3B3;
+        }
+        .btn {
+            opacity: 1;
+            // красный 
+            background: #E53719;
+            box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.08);
+            border-radius: 2px;
+            border: none;
+            padding: 15px 53px 12px 53px;
+            left: 564px;
+            border-radius: 2px;
+            margin: auto 0;
+            // текст
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                background: #be341c;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .form {
+        background-position: center;
+    }
+    .form__content {
+        margin-left: 100px;
+        h2 {
+            font-size: 44px;
+        }
+        .form__block {
+            .number {
+                padding-left: 21.5px;
+            }
+            .btn {
+                padding: 15px 20px 12px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form__content {
+        margin-left: 70px;
+        .form__block {
+            max-height: 68px;
+            background: none;
+            padding: 0px;
+            position: relative;
+            .input__card {
+                width: calc(100%/2);
+                padding: 10px;
+                background: #3A3A3A;
+            }
+            .name {
+                padding-left: 10px;
+            }
+            span {
+                display: none;
+                border: 1px solid #A7A7A7;
+                border-radius: 2px;
+                max-height: 43.5px;
+                margin: auto 0;
+            }
+            .number {
+                margin-top: 10px;
+                padding-left: 10px;
+            }
+            .btn {
+                padding: 15px 20px 12px 20px;
+                position: absolute;
+                left: 0;
+                top: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        margin-bottom: 55px;
+        background-position: 700px;
+    }
+    .form__content {
+        padding-top: 80px;
+        margin-left: 30px;
+        h2 {
+            max-width: 227px;
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .subtitle {
+            max-width: 230px;
+            font-size: 14px;
+            margin-bottom: 43px;
+        }
+        .form__block {
+            max-height: 68px;
+            background: none;
+            padding: 0px;
+            position: relative;
+            .input__card {
+                width: calc(100%/2);
+                padding: 10px;
+                background: #3A3A3A;
+            }
+            .name {
+                padding-left: 10px;
+            }
+            span {
+                display: none;
+                border: 1px solid #A7A7A7;
+                border-radius: 2px;
+                max-height: 43.5px;
+                margin: auto 0;
+            }
+            .number {
+                margin-top: 10px;
+                padding-left: 10px;
+            }
+            .btn {
+                padding: 15px 20px 12px 20px;
+                position: absolute;
+                left: 0;
+                top: 100px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .form {
+        margin-bottom: 55px;
+        background-position: 700px;
+    }
+    .form__content {
+        padding-top: 80px;
+        margin: 0 30px;
+        h2 {
+            max-width: 300px;
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .linear {
+            display: none;
+        }
+        .subtitle {
+            max-width: 300px;
+            font-size: 14px;
+            margin-bottom: 43px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .form__block {
+            max-height: 68px;
+            background: none;
+            padding: 0px;
+            position: relative;
+            // margin-left: 20px;
+            text-align: center;
+            .input__card {
+                width: 100%;
+                padding: 10px;
+                background: #3A3A3A;
+            }
+            .name {
+                padding-left: 10px;
+            }
+            span {
+                display: none;
+                border: 1px solid #A7A7A7;
+                border-radius: 2px;
+                max-height: 43.5px;
+                margin: auto 0;
+            }
+            .number {
+                margin-top: 10px;
+                padding-left: 10px;
+            }
+            .btn {
+                padding: 15px 20px 12px 20px;
+                position: relative;
+                top: 20px
+            }
+        }
+    }
+}

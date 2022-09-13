@@ -1,0 +1,260 @@
+.practice {
+    margin: 100px 0;
+    position: relative;
+    .practice__container {
+        // border: 1px solid red;
+        text-align: center;
+        .line-small {
+            &::after {
+                content: url(../images/practice/line-small.png);
+                position: absolute;
+                top: 3%;
+                right: 4%;
+            }
+        }
+        .line {
+            &::after {
+                content: url(../images/practice/line.png);
+                position: absolute;
+                top: 63%;
+                left: 4%;
+            }
+        }
+        .mark {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #0E84DA;
+            padding: 8px 24px;
+            background: rgba(14, 132, 218, 0.08);
+            border-radius: 60px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 48px;
+            color: #3B3E45;
+            margin-bottom: 100px;
+        }
+        .content {
+            justify-content: center;
+            text-align: start;
+            gap: 30px;
+            .card {
+                width: 40.09%;
+                padding: 40px;
+                border-radius: 32px;    
+                &:first-child {
+                    background: rgba(43, 194, 58, 0.1);
+                    .button {
+                        background: #2BC23A;
+                        &:hover {
+                            background: #35a540;
+                        }
+                    }
+                }
+                &:last-child {
+                    background: rgba(241, 85, 63, 0.1);
+                    .button {
+                        background: #F1553F;
+                        &:hover {
+                            background: #be4737;
+                        }
+                    }
+                }
+                .h3 {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #3B3E45;
+                    margin-bottom: 30px;
+                }
+                .p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #4A4F5C;
+                    margin: 30px 0;
+                }
+                .button {
+                    text-align: center;
+                    display: block;
+                    padding: 16px 24px;
+                    border-radius: 42px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100.98px) {
+    .practice {
+        .practice__container {
+            .content {
+                .card {
+                    width: 42.09%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992.98px) {
+    .practice {
+        .practice__container {
+            .content {
+                justify-content: center;
+                // margin: 0 15px;
+                .card {
+                    width: 45.09%;
+                    padding: 30px;
+                    .p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .practice {
+        .practice__container {
+            .line {
+                &::after {
+                    content: url(../images/practice/line.png);
+                    position: absolute;
+                    top: 53%;
+                    left: 4%;
+                }
+            }
+            .content {
+                justify-content: center;
+                margin: 0 15px;
+                .card {
+                    width: 100%;
+                    padding: 40px;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 500.98px) {
+    .practice {
+        margin: 50px 0;
+        position: relative;
+        .practice__container {
+            text-align: center;
+            .line-small {
+                &::after {
+                    content: url(../images/practice/line-small.png);
+                    position: absolute;
+                    top: -2%;
+                    right: 4%;
+                }
+            }
+            .line {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 63%;
+                    left: 4%;
+                }
+            }
+            .mark {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #0E84DA;
+                padding: 8px 24px;
+                background: rgba(14, 132, 218, 0.08);
+                border-radius: 60px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #3B3E45;
+                margin-bottom: 50px;
+            }
+            .content {
+                justify-content: center;
+                text-align: start;
+                gap: 15px;
+                .card {
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 16px; 
+                    &:first-child {
+                        background: rgba(43, 194, 58, 0.1);
+                        .button {
+                            background: #2BC23A;
+                            &:hover {
+                                background: #35a540;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        background: rgba(241, 85, 63, 0.1);
+                        .button {
+                            background: #F1553F;
+                            &:hover {
+                                background: #be4737;
+                            }
+                        }
+                    }
+                    .h3 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #3B3E45;
+                        margin-bottom: 15px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #4A4F5C;
+                        margin: 15px 0;
+                    }
+                    .button {
+                        text-align: center;
+                        display: block;
+                        padding: 16px 24px;
+                        border-radius: 42px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    
+}

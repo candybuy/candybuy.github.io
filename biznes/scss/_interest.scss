@@ -1,0 +1,412 @@
+.interest {
+    padding: 100px 0;
+    .interest__container {
+        text-align: center;
+        position: relative;
+        .smile {
+            &::after {
+                content: url(../images/interest/smile.png);
+                position: absolute;
+                top: 37%;
+                right: -8%;
+            }
+        }
+        .star-simple {
+            &::after {
+                content: url(../images/interest/star-simple.png);
+                position: absolute;
+                top: 91%;
+                left: -8%;
+            }
+        }
+        .mark {
+            display: inline-block;
+            padding: 8px 24px;
+            background: rgba(241, 85, 63, 0.08);
+            border-radius: 60px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #F1553F;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 48px;
+            color: #3B3E45;
+            margin-bottom: 72px;
+        }
+        .content {
+            justify-content: center;
+            gap: 30px;
+            .card {
+                display: inline-block;
+                text-align: start;
+                // max-width: 445px;
+                width: 40.09%;
+                height: 100%;
+                padding: 30px;
+                // border: 1px solid red;
+                &:nth-child(4) {
+                    position: relative;
+                    bottom: 92px;
+                }
+                &:last-child {
+                    position: relative;
+                    bottom: 148px;
+                }
+                img {
+                    margin-bottom: 15px;
+                }
+                .h3 {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #3B3E45;
+                    margin-bottom: 15px;
+                }
+                .p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #4A4F5C;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300.98px) {
+    .interest {
+        .interest__container {
+            .smile {
+                &::after {
+                    content: url(../images/interest/smile.png);
+                    position: absolute;
+                    top: 33%;
+                    right: 0%;
+                }
+            }
+            .star-simple {
+                &::after {
+                    content: url(../images/interest/star-simple.png);
+                    position: absolute;
+                    top: 100%;
+                    left: 2%;
+                }
+            }
+            // .content {
+            //     justify-content: center;
+            //     gap: 30px;
+            //     .card {
+            //         display: inline-block;
+            //         text-align: start;
+            //         // max-width: 445px;
+            //         width: 40.09%;
+            //         height: 100%;
+            //         padding: 30px;
+            //         // border: 1px solid red;
+            //         &:nth-child(4) {
+            //             position: relative;
+            //             bottom: 92px;
+            //         }
+            //         &:last-child {
+            //             position: relative;
+            //             bottom: 148px;
+            //         }
+            //         img {
+            //             margin-bottom: 15px;
+            //         }
+            //         .h3 {
+            //             font-family: $Raleway;
+            //             font-style: normal;
+            //             font-weight: 600;
+            //             font-size: 24px;
+            //             line-height: 36px;
+            //             color: #3B3E45;
+            //             margin-bottom: 15px;
+            //         }
+            //         .p {
+            //             font-style: normal;
+            //             font-weight: 400;
+            //             font-size: 16px;
+            //             line-height: 28px;
+            //             color: #4A4F5C;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .interest {
+        padding: 100px 0;
+        .interest__container {
+            text-align: center;
+            position: relative;
+            .smile {
+                &::after {
+                    content: url(../images/interest/smile.png);
+                    position: absolute;
+                    top: 31%;
+                    right: 2%;
+                }
+            }
+            .star-simple {
+                &::after {
+                    content: url(../images/interest/star-simple.png);
+                    position: absolute;
+                    top: 101%;
+                    left: 3%;
+                }
+            }
+            .mark {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(241, 85, 63, 0.08);
+                border-radius: 60px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #F1553F;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 48px;
+                color: #3B3E45;
+                margin-bottom: 72px;
+            }
+            .content {
+                padding: 0 15px;
+                justify-content: space-between;
+                gap: 30px;
+                .card {
+                    display: inline-block;
+                    text-align: start;
+                    width: 47.09%;
+                    height: 100%;
+                    padding: 20px;
+                    // border: 1px solid red;
+                    &:nth-child(4) {
+                        position: relative;
+                        bottom: 92px;
+                    }
+                    &:last-child {
+                        position: relative;
+                        bottom: 148px;
+                    }
+                    img {
+                        margin-bottom: 15px;
+                    }
+                    .h3 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 21px;
+                        line-height: 36px;
+                        color: #3B3E45;
+                        margin-bottom: 15px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 28px;
+                        color: #4A4F5C;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 700.98px) {
+    .interest {
+        padding: 100px 0;
+        .interest__container {
+            text-align: center;
+            position: relative;
+            .smile {
+                &::after {
+                    content: url(../images/interest/smile.png);
+                    position: absolute;
+                    top: 37%;
+                    right: 4%;
+                }
+            }
+            .star-simple {
+                &::after {
+                    content: url(../images/interest/star-simple.png);
+                    position: absolute;
+                    top: 99%;
+                    left: 3%;
+                }
+            }
+            .mark {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(241, 85, 63, 0.08);
+                border-radius: 60px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #F1553F;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 48px;
+                color: #3B3E45;
+                margin-bottom: 72px;
+            }
+            .content {
+                justify-content: center;
+                gap: 30px;
+                .card {
+                    display: inline-block;
+                    text-align: start;
+                    // max-width: 445px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    // border: 1px solid red;
+                    &:nth-child(4) {
+                        position: relative;
+                        bottom: 0;
+                    }
+                    &:last-child {
+                        position: relative;
+                        bottom: 0;
+                    }
+                    img {
+                        margin-bottom: 15px;
+                    }
+                    .h3 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #3B3E45;
+                        margin-bottom: 15px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #4A4F5C;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500.98px) {
+    .interest {
+        padding: 50px 0;
+        .interest__container {
+            text-align: center;
+            position: relative;
+            .smile {
+                &::after {
+                    content: url(../images/interest/smileSmall.png);
+                    position: absolute;
+                    top: 11%;
+                    right: 20%;
+                }
+            }
+            .star-simple {
+                &::after {
+                    content: url(../images/interest/star-simpleSmall.png);
+                    position: absolute;
+                    top: 69%;
+                    left: 57%;
+                }
+            }
+            .mark {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(241, 85, 63, 0.08);
+                border-radius: 60px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #F1553F;
+                margin-bottom: 56px;
+            }
+            h2 {
+                font-family: $Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #3B3E45;
+                margin-bottom: 50px;
+            }
+            .content {
+                justify-content: center;
+                gap: 30px;
+                // flex-direction: column-reverse;
+                .card {
+                    display: inline-block;
+                    text-align: start;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0px;
+                    &:nth-child(4) {
+                        position: relative;
+                        bottom: 0px;
+                    }
+                    &:last-child {
+                        position: relative;
+                        bottom: 0px;
+                    }
+                    img {
+                        margin-bottom: 15px;
+                    }
+                    .h3 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #3B3E45;
+                        margin-bottom: 15px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #4A4F5C;
+                    }
+                }
+            }
+        }
+    }
+}

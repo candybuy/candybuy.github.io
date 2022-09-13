@@ -1,19 +1,13 @@
-const slider = document.querySelector('.swiper-container');
+const slider1 = document.querySelector(".swiper-page");
 
-let mySwiper = new Swiper(slider, {
-	slidesPerView: 3,
-	spaceBetween: 10,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-		type: 'fraction',
-	},
-	autoplay: {
-		delay: 5000,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+
+let galleryThumbs = new Swiper(slider1, {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
 })

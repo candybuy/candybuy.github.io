@@ -1,0 +1,53 @@
+.hr_slider {
+    margin-bottom: 100px;
+    .swiper-hr {
+        // width: 257%;
+        .swiper-wrapper {
+            .swiper-slide {
+                // overflow: hidden;
+                // max-width: 100%;
+                .main__img {
+                    // max-width: inherit;
+                    // height: 670px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 1100px) {
+//     .hr_slider {
+//         margin-bottom: 100px;
+//         .swiper-hr {
+//             width: 257%;
+//             .swiper-wrapper {
+//                 .swiper-slide {
+//                     // overflow: hidden;
+//                     // max-width: 100%;
+//                     .main__img {
+//                         // height: 670px;
+//                         max-width: inherit;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

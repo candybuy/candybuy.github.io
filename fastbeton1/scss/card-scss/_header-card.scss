@@ -1,0 +1,49 @@
+.header-card {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 70px;
+    background-image: none;
+    .header__container {
+        .header__title {
+            padding-bottom: 32px;
+            .title__middle {
+                .subtitle {
+                    color: #444444;
+                }
+                .title__nav {
+                    .title__list {
+                        .title__item {
+                            a {
+                                color: #151515;
+                            }
+                        }
+                    }
+                }
+            }
+            .title__right {
+                .title__right-content {
+                    .title-btn {
+                        border: 1px solid #444444;
+                        color: #444444;
+                        &:hover {
+                            color: #d4cbcb;
+                            border: 1px solid #d4cbcb;
+                        }
+                    }
+                    .title__phone {
+                        .phone {
+                            color: #151515;
+                        }
+                    }
+                }
+            }
+            // .noneShow {
+            // }
+            // .sidebar {
+            // }
+            // .closebtn {
+            // }
+            // .openbtn {
+            // }
+        }
+    }
+}

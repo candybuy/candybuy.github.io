@@ -1,0 +1,14 @@
+{
+  "name": "hr_landing",
+  "version": "1.0.0",
+  "description": "creating swiper",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CandyBuy",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^8.3.2"
+  }
+}

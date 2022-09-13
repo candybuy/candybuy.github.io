@@ -1,0 +1,186 @@
+.about-bottom {
+    padding: 100px 0;
+    h2 {
+        text-align: center;
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3B3E45;
+        margin-bottom: 95px;
+    }
+    .about-bottom__content {
+        justify-content: center;
+        // margin-bottom: 100px;
+        .item {
+            width: 160px;
+            height: 160px;
+            background: #0E84DA;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 21px;
+            position: relative;
+            .p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        }
+        .item-1{
+            transform: rotate(-3deg);
+            .p {
+                position: absolute;
+                top: 33%;
+            }
+        }
+        .item-2{
+            transform: rotate(3deg);
+            .p {
+                position: absolute;
+                top: 33%;
+            }
+        }
+        .item-3{
+            transform: rotate(-3deg);
+            .p {
+                position: absolute;
+                top: 33%;
+                left: 20%;
+            }
+        }
+        .item-4{
+            transform: rotate(3deg);
+            .p {
+                position: absolute;
+                top: 33%;
+            }
+        }
+        .gray {
+            background: #F4F6F8;
+            margin-right: 0;
+            color: #4A4F5C;
+            .text {
+                position: absolute;
+                top: 30%;
+                left: 13%;
+                .p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #4A4F5C;
+                    :first-child {
+                        padding-top: 44px;
+                    }
+                }
+                .number {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #0E84DA;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560.98px) {
+    .about-bottom {
+        padding: 50px 0;
+        h2 {
+            text-align: center;
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 50px;
+        }
+        .about-bottom__content {
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 0px;
+            .item {
+                width: 160px;
+                height: 160px;
+                background: #0E84DA;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 0px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                position: relative;
+                .p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+            .item-1{
+                transform: rotate(-3deg);
+                .p {
+                    position: absolute;
+                    top: 33%;
+                }
+            }
+            .item-2{
+                transform: rotate(3deg);
+                .p {
+                    position: absolute;
+                    top: 33%;
+                }
+            }
+            .item-3{
+                transform: rotate(-3deg);
+                .p {
+                    position: absolute;
+                    top: 33%;
+                    left: 20%;
+                }
+            }
+            .item-4{
+                transform: rotate(3deg);
+                .p {
+                    position: absolute;
+                    top: 33%;
+                }
+            }
+            .gray {
+                background: #F4F6F8;
+                margin-right: 0;
+                color: #4A4F5C;
+                margin: 0 auto;
+                .text {
+                    position: absolute;
+                    top: 30%;
+                    left: 13%;
+                    .p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #4A4F5C;
+                        :first-child {
+                            padding-top: 44px;
+                        }
+                    }
+                    .number {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #0E84DA;
+                    }
+                }
+            }
+        }
+    }
+}

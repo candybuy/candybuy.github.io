@@ -1,0 +1,308 @@
+.conditions {
+    background: #FAFCFD;
+    position: relative;
+    .conditions__container {
+        .conditions__content {
+            justify-content: space-between;
+            .star-simple {
+                &::after {
+                    content: url(../images/conditions/star-simple.svg);
+                    position: absolute;
+                    left: 20%;
+                    top: 22.59%;
+                }
+            }
+            .chair {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .content__txt {
+                width: 57.207%;
+                position: relative;
+                margin: 100px 0;
+                .star {
+                    &::after {
+                        content: url(../images/conditions/star.svg);
+                        position: absolute;
+                        right: 7%;
+                        top: -4.41%;
+                    }
+                }
+                .mark {
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #F1553F;
+                    padding: 8px 24px;
+                    background: rgba(241, 85, 63, 0.08);
+                    border-radius: 60px;
+                    margin-bottom: 20px;
+                }
+                h2 {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 48px;
+                    color: #3B3E45;
+                    margin-bottom: 50px;
+                }
+                .p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #4A4F5C;
+                    margin-bottom: 50px;
+                }
+                .content__cards {
+                    // justify-content: space-between;
+                    gap: 20px;
+                    .card {
+                        img {
+                            margin-bottom: 20px;
+                        }
+                        width: 48.425%;
+                        .subtitle {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: #4A4F5C;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conditions {
+        .conditions__container {
+            .conditions__content {
+                .star-simple {
+                    &::after {
+                        top: 34.59%;
+                    }
+                }
+                .chair {
+                    img {
+                        max-width: 76%;
+                    }
+                }
+                .content__txt {
+                    .p {
+                        max-width: 500px;
+                    }
+                    .content__cards {
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .conditions {
+        .conditions__container {
+            .conditions__content {
+                .star-simple {
+                    &::after {
+                        top: 34.59%;
+                    }
+                }
+                .chair {
+                    bottom: 5%;
+                    img {
+                        max-width: 50%;
+                    }
+                }
+                .content__txt {
+                    .mark {
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        margin-bottom: 25px;
+                    }
+                    .p {
+                        max-width: 500px;
+                    }
+                    .content__cards {
+                        gap: 10px;
+                        .card {
+                            .subtitle {
+                                font-size: 13px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .conditions {
+        .conditions__container {
+            padding: 0 15px;
+            .conditions__content {
+                justify-content: center;
+                .star-simple {
+                    &::after {
+                        left: 34%;
+                        top: 69.59%;
+                    }
+                }
+                .chair {
+                    bottom: 0%;
+                    img {
+                        max-width: 50%;
+                    }
+                }
+                .content__txt {
+                    width: 100%;
+                    padding-bottom: 200px;
+                    .mark {
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        margin-bottom: 25px;
+                    }
+                    .p {
+                        max-width: 500px;
+                    }
+                    .content__cards {
+                        gap: 10px;
+                        .card {
+                            .subtitle {
+                                font-size: 13px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .conditions {
+        .conditions__container {
+            .conditions__content {
+                justify-content: center;
+                .star-simple {
+                    &::after {
+                        left: 66%;
+                        top: 8%;
+                    }
+                }
+                .chair {
+                    bottom: 0%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content__txt {
+                    width: 100%;
+                    margin: 50px 0;
+                    padding-bottom: 444px;
+                    .star {
+                        &::after {
+                            right: 12%;
+                            top: 65.59%;
+                        }
+                    }
+                    .mark {
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        font-size: 24px;
+                        line-height: 36px;
+                        margin-bottom: 25px;
+                    }
+                    .p {
+                        font-size: 16px;
+                        line-height: 28px;
+                        max-width: 500px;
+                    }
+                    .content__cards {
+                        gap: 20px;
+                        .card {
+                            width: 46.969%;
+                            .subtitle {
+                                font-size: 14px;
+                                line-height: 26px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .conditions {
+        .conditions__container {
+            .conditions__content {
+                justify-content: center;
+                .star-simple {
+                    &::after {
+                        left: 66%;
+                        top: 8%;
+                    }
+                }
+                .chair {
+                    bottom: 0%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content__txt {
+                    width: 100%;
+                    margin: 50px 0;
+                    padding-bottom: 359px;
+                    .star {
+                        &::after {
+                            right: 12%;
+                            top: 65.59%;
+                        }
+                    }
+                    .mark {
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        font-size: 24px;
+                        line-height: 36px;
+                        margin-bottom: 25px;
+                    }
+                    .p {
+                        font-size: 16px;
+                        line-height: 28px;
+                        max-width: 500px;
+                    }
+                    .content__cards {
+                        gap: 20px;
+                        .card {
+                            width: 46.969%;
+                            .subtitle {
+                                font-size: 14px;
+                                line-height: 26px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

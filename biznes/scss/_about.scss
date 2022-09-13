@@ -1,0 +1,920 @@
+.about {
+    background: #FAFCFD;
+    .about__container {
+        position: relative;
+        padding: 0;
+        .star {
+            position: absolute;
+            top: 47px;
+            left: -100px;
+            img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+        .about-up {
+            justify-content: space-between;
+            .about-up__left {
+                position: relative;
+                width: 45.045%;
+                margin: 155px 0;
+                .mark {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    color: #0E84DA;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    padding: 8px 24px;
+                    background: rgba(14, 132, 218, 0.08);
+                    border-radius: 60px;
+                    margin-bottom: 20px;
+            
+                }
+                h2 {
+                    font-family: $Raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 48px;
+                    color: #3B3E45;
+                    margin-bottom: 50px;
+                }
+                .p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #4A4F5C;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #4A4F5C;
+                }
+                .linear {
+                    &::after {
+                        content: url(../images/about/linear.svg);
+                        position: absolute;
+                        left: 78%;
+                        top: 67.59%;
+                    }
+                }
+                .starSecond {
+                    &::after {
+                        content: url(../images/about/star2.svg);
+                        position: absolute;
+                        left: 80%;
+                        top: 107.59%;
+                    }
+                }
+            }
+            .about-up__right {
+                width: 48.648%;
+                background-image: url(../images/about/background.png);
+                margin: 100px 0;
+                position: relative;
+                .card {
+                    background: #FFFFFF;
+                    max-width: 221px;
+                    max-height: 174px;
+                    box-shadow: 0px 12px 24px rgba(59, 62, 69, 0.1);
+                    border-radius: 16px;
+                    padding: 20px;
+                    .h2 {
+                        // display: inline-block;
+                        font-family: $Raleway;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        margin-bottom: 12px;
+                    }
+                    a {
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #0E84DA;
+                        &::after {
+                            content: url(../images/about/galochkasvg.svg);
+                            position: relative;
+                            top: 7px;
+                        }
+                    }
+                }
+                .card-1 {
+                    transform: rotate(-2deg);
+                    position: absolute;
+                    top: 100px;
+                    left: 8px;
+                    .Webkassa {
+                        &::before {
+                            content: url(../images/about/webkassa.svg);
+                            position: relative;
+                            top: 6px;
+                            right: 6px;
+                        }
+                    }
+                }
+                .card-2 {
+                    transform: rotate(2deg);
+                    position: absolute;
+                    top: 38px;
+                    right: 41px;
+                    .Smartcontract {
+                        &::before {
+                            content: url(../images/about/smartcontract.svg);
+                            position: relative;
+                            top: 6px;
+                            right: 6px;
+                        }
+                    }
+                }
+                .card-3 {
+                    transform: rotate(2deg);
+                    position: absolute;
+                    top: 310px;
+                    left: 6px;
+                    .WorkPace {
+                        &::before {
+                            content: url(../images/about/workpace.svg);
+                            position: relative;
+                            top: 6px;
+                            right: 6px;
+                        }
+                    }
+                }
+                .card-4 {
+                    transform: rotate(-2deg);
+                    position: absolute;
+                    top: 248px;
+                    right: 44px;
+                    .bicloud {
+                        &::before {
+                            content: url(../images/about/bicloud.svg);
+                            position: relative;
+                            top: 6px;
+                            right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+        @import "about-middle";
+        @import "about-bottom";
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about {
+        .about__container {
+            padding: 0 15px;
+            .star {
+                position: absolute;
+                top: 68px;
+                left: 19px;
+            }
+            .about-up {
+                .about-up__left {
+                    width: 44.045%;
+                    .p {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linear.svg);
+                            position: absolute;
+                            left: 78%;
+                            top: 67.59%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            position: absolute;
+                            left: 80%;
+                            top: 107.59%;
+                        }
+                    }
+                }
+                .about-up__right {
+                    width: 48.648%;
+                    .card {
+                        max-width: 190px;
+                        padding: 10px;
+                    }
+                    .card-1 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 88px;
+                        left: 8px;
+                    }
+                    .card-2 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 38px;
+                        right: 57px;
+                    }
+                    .card-3 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 271px;
+                        left: 6px;
+                    }
+                    .card-4 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 227px;
+                        right: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992.98px) {
+    .about {
+        .about__container {
+            padding: 0 15px;
+            .star {
+                position: absolute;
+                top: 68px;
+                left: 19px;
+            }
+            .about-up {
+                .about-up__left {
+                    width: 44.045%;
+                    .mark {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: #0E84DA;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        padding: 8px 24px;
+                        background: rgba(14, 132, 218, 0.08);
+                        border-radius: 60px;
+                        margin-bottom: 15px;
+                    }
+                    h2 {
+                        font-family: $Raleway;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        margin-bottom: 7px;
+                    }
+                    .p {
+                        font-size: 13px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linear.svg);
+                            position: absolute;
+                            left: 71%;
+                            top: 83.59%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            position: absolute;
+                            left: 73%;
+                            top: 129.59%;
+                        }
+                    }
+                }
+                .about-up__right {
+                    width: 53.648%;
+                    .card {
+                        max-width: 190px;
+                        padding: 10px;
+                        .h2 {
+                            // display: inline-block;
+                            font-family: $Raleway;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            letter-spacing: 0em;
+                            margin-bottom: 14px;
+                        }
+                        p {
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            margin-bottom: 12px;
+                        }
+                        a {
+                            display: inline-block;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #0E84DA;
+                            &::after {
+                                content: url(../images/about/galochkasvg.svg);
+                                position: relative;
+                                top: 7px;
+                            }
+                        }
+                    }
+                    .card-1 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 88px;
+                        left: 35px;
+                    }
+                    .card-2 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 38px;
+                        right: 12px;
+                    }
+                    .card-3 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 271px;
+                        left: 39px;
+                    }
+                    .card-4 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 227px;
+                        right: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 890.98px) {
+    .about {
+        .about__container {
+            padding: 0 15px;
+            .star {
+                position: absolute;
+                top: 68px;
+                left: 19px;
+            }
+            .about-up {
+                .about-up__left {
+                    width: 44.045%;
+                    .mark {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: #0E84DA;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        padding: 8px 24px;
+                        background: rgba(14, 132, 218, 0.08);
+                        border-radius: 60px;
+                        margin-bottom: 15px;
+                    }
+                    h2 {
+                        font-family: $Raleway;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        margin-bottom: 14px;
+                    }
+                    .p {
+                        font-size: 13px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linear.svg);
+                            position: absolute;
+                            left: 60%;
+                            top: 83.59%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            position: absolute;
+                            left: 64%;
+                            top: 118.59%;
+                        }
+                    }
+                }
+                .about-up__right {
+                    width: 53.648%;
+                    .card {
+                        max-width: 160px;
+                        padding: 10px;
+                        .h2 {
+                            font-size: 16px;
+                            margin-bottom: 14px;
+                        }
+                        p {
+                            font-size: 13px;
+                            margin-bottom: 12px;
+                        }
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                    .card-1 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 88px;
+                        left: 35px;
+                    }
+                    .card-2 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 38px;
+                        right: 12px;
+                    }
+                    .card-3 {
+                        transform: rotate(2deg);
+                        position: absolute;
+                        top: 271px;
+                        left: 39px;
+                    }
+                    .card-4 {
+                        transform: rotate(-2deg);
+                        position: absolute;
+                        top: 227px;
+                        right: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750.98px) {
+    .about {
+        background: #FAFCFD;
+        // display: flex;
+        // justify-content: center;
+        .about__container {
+            position: relative;
+            padding: 0 15px;
+            // .star {
+            //     // width: 36px;
+            //     // height: 36px;
+            //     // display: inline-block;
+            //     position: absolute;
+            //     top: 47px;
+            //     left: -100px;
+            //     img {
+            //         width: 36px;
+            //         height: 36px;
+            //     }
+            // }
+            .about-up {
+                justify-content: space-between;
+                .about-up__left {
+                    width: 100%;
+                    position: relative;
+                    margin: 155px 0;
+                    .mark {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: #0E84DA;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        padding: 8px 24px;
+                        background: rgba(14, 132, 218, 0.08);
+                        border-radius: 60px;
+                        margin-bottom: 20px;
+                
+                    }
+                    h2 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 48px;
+                        color: #3B3E45;
+                        margin-bottom: 50px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #4A4F5C;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #4A4F5C;
+                    }
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linearSmall.svg);
+                            height: 115.12008666992232px;
+                            width: 171.96060180664128px;
+                            position: absolute;
+                            left: 73%;
+                            top: 103%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            left: 21%;
+                            top: 103%;
+                        }
+                    }
+                }
+                .about-up__right {
+                    width: 100%;
+                    background-image: url(../images/about/background.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin: 0;
+                    position: relative;
+                    .content {
+                        flex-direction: column;
+                        .card {
+                            margin: 0 auto;
+                            background: #FFFFFF;
+                            max-width: 400px;
+                            max-height: 174px;
+                            box-shadow: 0px 12px 24px rgba(59, 62, 69, 0.1);
+                            border-radius: 16px;
+                            padding: 15px;
+                            
+                            &:nth-child(1) {
+                                margin-bottom: 15px;
+                            }
+                            &:nth-child(2) {
+                                margin-bottom: 15px;
+                            }
+                            &:nth-child(3) {
+                                margin-bottom: 15px;
+                            }
+                            .h2 {
+                                // display: inline-block;
+                                font-family: $Raleway;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                letter-spacing: 0em;
+                                margin-bottom: 14px;
+                                width: 300px;
+                                margin-left: 15px;
+                            }
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                margin-bottom: 12px;
+                            }
+                            a {
+                                display: inline-block;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #0E84DA;
+                                &::after {
+                                    content: url(../images/about/galochkasvg.svg);
+                                    position: relative;
+                                    top: 7px;
+                                }
+                            }
+                        }
+                        .card-1 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 88px;
+                            left: 8px;
+                            .Webkassa {
+                                &::before {
+                                    content: url(../images/about/webkassa.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-2 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 38px;
+                            right: 41px;
+                            .Smartcontract {
+                                &::before {
+                                    content: url(../images/about/smartcontract.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-3 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 310px;
+                            left: 6px;
+                            .WorkPace {
+                                &::before {
+                                    content: url(../images/about/workpace.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-4 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 248px;
+                            right: 44px;
+                            .bicloud {
+                                &::before {
+                                    content: url(../images/about/bicloud.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500.98px) {
+    .about {
+        background: #FAFCFD;
+        .about__container {
+            position: relative;
+            padding: 0px;
+            .star {
+                position: absolute;
+                top: 1%;
+                left: 37%;
+                img {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            .about-up {
+                justify-content: inherit;
+                .about-up__left {
+                    width: 100%;
+                    position: relative;
+                    margin: 50px 0;
+                    padding: 0 15px;
+                    .mark {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: #0E84DA;
+                        font-style: normal;
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0em;
+                        padding: 8px 24px;
+                        background: rgba(14, 132, 218, 0.08);
+                        border-radius: 60px;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        font-family: $Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        color: #3B3E45;
+                        margin-bottom: 25px;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                    .p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #4A4F5C;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #4A4F5C;
+                    }
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linearSmall.svg);
+                            height: 115.12008666992232px;
+                            width: 171.96060180664128px;
+                            position: absolute;
+                            left: 73%;
+                            top: 101%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            left: 21%;
+                            top: 103%;
+                        }
+                    }
+                }
+                .about-up__right {
+                    width: 100%;
+                    background-image: url(../images/about/background.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin: 50px 0px;
+                    position: relative;
+                    .content {
+                        flex-direction: column;
+                        .card {
+                            margin: 0 auto;
+                            background: #FFFFFF;
+                            max-width: 330px;
+                            max-height: 174px;
+                            box-shadow: 0px 12px 24px rgba(59, 62, 69, 0.1);
+                            border-radius: 16px;
+                            padding: 15px;
+                            
+                            &:nth-child(1) {
+                                margin-bottom: 15px;
+                            }
+                            &:nth-child(2) {
+                                margin-bottom: 15px;
+                            }
+                            &:nth-child(3) {
+                                margin-bottom: 15px;
+                            }
+                            .h2 {
+                                // display: inline-block;
+                                font-family: $Raleway;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                letter-spacing: 0em;
+                                margin-bottom: 14px;
+                                width: 300px;
+                                margin-left: 15px;
+                            }
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                margin-bottom: 12px;
+                            }
+                            a {
+                                display: inline-block;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #0E84DA;
+                                &::after {
+                                    content: url(../images/about/galochkasvg.svg);
+                                    position: relative;
+                                    top: 7px;
+                                }
+                            }
+                        }
+                        .card-1 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 88px;
+                            left: 8px;
+                            .Webkassa {
+                                &::before {
+                                    content: url(../images/about/webkassa.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-2 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 38px;
+                            right: 41px;
+                            .Smartcontract {
+                                &::before {
+                                    content: url(../images/about/smartcontract.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-3 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 310px;
+                            left: 6px;
+                            .WorkPace {
+                                &::before {
+                                    content: url(../images/about/workpace.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .card-4 {
+                            transform: rotate(0deg);
+                            position: static;
+                            top: 248px;
+                            right: 44px;
+                            .bicloud {
+                                &::before {
+                                    content: url(../images/about/bicloud.svg);
+                                    position: relative;
+                                    top: 6px;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400.98px) {
+    .about {
+        .about__container {
+            .star {
+                top: 14px;
+                left: 170px;
+            }
+            .about-up {
+                .about-up__left {
+                    .linear {
+                        &::after {
+                            content: url(../images/about/linearSmall.svg);
+                            height: 115.12008666992232px;
+                            width: 171.96060180664128px;
+                            position: absolute;
+                            left: 61%;
+                            top: 86%;
+                        }
+                    }
+                    .starSecond {
+                        &::after {
+                            content: url(../images/about/star2.svg);
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            left: 21%;
+                            top: 103%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
