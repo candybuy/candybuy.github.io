@@ -1,17 +1,14 @@
 .vacancy {
-    // display: flex;
-    // justify-content: center;
     .vacancy__container {
         text-align: center;
         position: relative;
         padding: 0;
         .smile {
-            position: absolute;
-            top: 100px;
-            left: -68px;
-            img {
-                width: 42px;
-                height: 42px;
+            &::after {
+                content: url(../images/vacancy/smile.svg);
+                position: absolute;
+                top: 100px;
+                left: -68px;
             }
         }
         .mark {
@@ -46,6 +43,7 @@
                 background: #FFFFFF;
                 box-shadow: 0px 12px 24px #E5EDF1;
                 border-radius: 16px;
+                cursor: pointer;
                 .card__content {
                     padding: 30px;
                     &::after {
@@ -122,12 +120,11 @@
                 opacity: 0;
             }
             .star {
-                position: absolute;
-                right: -74px;
-                bottom: 330px;
-                img {
-                    width: 70px;
-                    height: 70px;
+                &::after {
+                    content: url(../images/vacancy/star.svg);
+                    position: absolute;
+                    right: -74px;
+                    bottom: 330px;
                 }
             }
         }
@@ -188,19 +185,15 @@
 
 @media screen and (max-width: 1100px) {
     .vacancy {
-        // display: flex;
-        // justify-content: center;
         .vacancy__container {
             text-align: center;
             position: relative;
             padding: 0;
             .smile {
-                position: absolute;
-                top: 100px;
-                left: -68px;
-                img {
-                    width: 42px;
-                    height: 42px;
+                &::after {
+                    position: absolute;
+                    top: 100px;
+                    left: -68px;
                 }
             }
             .mark {
@@ -311,12 +304,10 @@
                     opacity: 0;
                 }
                 .star {
-                    position: absolute;
-                    right: -74px;
-                    bottom: 330px;
-                    img {
-                        width: 70px;
-                        height: 70px;
+                    &::after {
+                        position: absolute;
+                        right: -74px;
+                        bottom: 330px;
                     }
                 }
             }
@@ -338,19 +329,15 @@
 
 @media screen and (max-width: 730px) {
     .vacancy {
-        display: flex;
-        justify-content: center;
         .vacancy__container {
             text-align: center;
             position: relative;
             padding: 0;
             .smile {
-                position: absolute;
-                top: 6%;
-                left: 5%;
-                img {
-                    width: 42px;
-                    height: 42px;
+                &::after {
+                    position: absolute;
+                    top: 6%;
+                    left: 5%;
                 }
             }
             .mark {
@@ -463,12 +450,10 @@
                     opacity: 0;
                 }
                 .star {
-                    position: absolute;
-                    right: -74px;
-                    bottom: 330px;
-                    img {
-                        width: 70px;
-                        height: 70px;
+                    &::after {
+                        position: absolute;
+                        right: -74px;
+                        bottom: 330px;
                     }
                 }
             }
@@ -531,8 +516,6 @@
 
 @media screen and (max-width: 500px) {
     .vacancy {
-        display: flex;
-        justify-content: center;
         .vacancy__container {
             text-align: center;
             position: relative;
@@ -647,12 +630,10 @@
                     opacity: 0;
                 }
                 .star {
-                    position: absolute;
-                    right: -74px;
-                    bottom: 330px;
-                    img {
-                        width: 70px;
-                        height: 70px;
+                    &::after {
+                        position: absolute;
+                        right: -74px;
+                        bottom: 330px;
                     }
                 }
             }

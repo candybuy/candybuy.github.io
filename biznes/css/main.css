@@ -377,14 +377,11 @@ main {
   position: relative;
   padding: 0;
 }
-.about .about__container .star {
+.about .about__container .star:after {
+  content: url(../images/about/star.svg);
   position: absolute;
   top: 47px;
   left: -100px;
-}
-.about .about__container .star img {
-  width: 36px;
-  height: 36px;
 }
 .about .about__container .about-up {
   justify-content: space-between;
@@ -781,7 +778,7 @@ main {
   .about .about__container {
     padding: 0 15px;
   }
-  .about .about__container .star {
+  .about .about__container .star::after {
     position: absolute;
     top: 68px;
     left: 19px;
@@ -843,7 +840,7 @@ main {
   .about .about__container {
     padding: 0 15px;
   }
-  .about .about__container .star {
+  .about .about__container .star::after {
     position: absolute;
     top: 68px;
     left: 19px;
@@ -954,7 +951,7 @@ main {
   .about .about__container {
     padding: 0 15px;
   }
-  .about .about__container .star {
+  .about .about__container .star::after {
     position: absolute;
     top: 68px;
     left: 19px;
@@ -1229,14 +1226,10 @@ main {
     position: relative;
     padding: 0px;
   }
-  .about .about__container .star {
+  .about .about__container .star::after {
     position: absolute;
     top: 1%;
     left: 37%;
-  }
-  .about .about__container .star img {
-    width: 36px;
-    height: 36px;
   }
   .about .about__container .about-up {
     justify-content: inherit;
@@ -1410,7 +1403,7 @@ main {
   }
 }
 @media screen and (max-width: 400.98px) {
-  .about .about__container .star {
+  .about .about__container .star::after {
     top: 14px;
     left: 170px;
   }
@@ -1436,14 +1429,11 @@ main {
   position: relative;
   padding: 0;
 }
-.vacancy .vacancy__container .smile {
+.vacancy .vacancy__container .smile::after {
+  content: url(../images/vacancy/smile.svg);
   position: absolute;
   top: 100px;
   left: -68px;
-}
-.vacancy .vacancy__container .smile img {
-  width: 42px;
-  height: 42px;
 }
 .vacancy .vacancy__container .mark {
   margin-top: 100px;
@@ -1477,6 +1467,7 @@ main {
   background: #FFFFFF;
   box-shadow: 0px 12px 24px #E5EDF1;
   border-radius: 16px;
+  cursor: pointer;
 }
 .vacancy .vacancy__container .vacancy__content .card .card__content {
   padding: 30px;
@@ -1548,14 +1539,11 @@ main {
 .vacancy .vacancy__container .vacancy__content .lastCard {
   opacity: 0;
 }
-.vacancy .vacancy__container .vacancy__content .star {
+.vacancy .vacancy__container .vacancy__content .star::after {
+  content: url(../images/vacancy/star.svg);
   position: absolute;
   right: -74px;
   bottom: 330px;
-}
-.vacancy .vacancy__container .vacancy__content .star img {
-  width: 70px;
-  height: 70px;
 }
 .vacancy .vacancy__container .green-box {
   background: #2BC23A;
@@ -1612,14 +1600,10 @@ main {
     position: relative;
     padding: 0;
   }
-  .vacancy .vacancy__container .smile {
+  .vacancy .vacancy__container .smile::after {
     position: absolute;
     top: 100px;
     left: -68px;
-  }
-  .vacancy .vacancy__container .smile img {
-    width: 42px;
-    height: 42px;
   }
   .vacancy .vacancy__container .mark {
     margin-top: 100px;
@@ -1725,14 +1709,10 @@ main {
   .vacancy .vacancy__container .vacancy__content .lastCard {
     opacity: 0;
   }
-  .vacancy .vacancy__container .vacancy__content .star {
+  .vacancy .vacancy__container .vacancy__content .star::after {
     position: absolute;
     right: -74px;
     bottom: 330px;
-  }
-  .vacancy .vacancy__container .vacancy__content .star img {
-    width: 70px;
-    height: 70px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1744,23 +1724,15 @@ main {
   }
 }
 @media screen and (max-width: 730px) {
-  .vacancy {
-    display: flex;
-    justify-content: center;
-  }
   .vacancy .vacancy__container {
     text-align: center;
     position: relative;
     padding: 0;
   }
-  .vacancy .vacancy__container .smile {
+  .vacancy .vacancy__container .smile::after {
     position: absolute;
     top: 6%;
     left: 5%;
-  }
-  .vacancy .vacancy__container .smile img {
-    width: 42px;
-    height: 42px;
   }
   .vacancy .vacancy__container .mark {
     margin-top: 100px;
@@ -1867,14 +1839,10 @@ main {
     display: none;
     opacity: 0;
   }
-  .vacancy .vacancy__container .vacancy__content .star {
+  .vacancy .vacancy__container .vacancy__content .star::after {
     position: absolute;
     right: -74px;
     bottom: 330px;
-  }
-  .vacancy .vacancy__container .vacancy__content .star img {
-    width: 70px;
-    height: 70px;
   }
   .vacancy .vacancy__container .green-box {
     background: #2BC23A;
@@ -1927,10 +1895,6 @@ main {
   }
 }
 @media screen and (max-width: 500px) {
-  .vacancy {
-    display: flex;
-    justify-content: center;
-  }
   .vacancy .vacancy__container {
     text-align: center;
     position: relative;
@@ -2041,14 +2005,10 @@ main {
     display: none;
     opacity: 0;
   }
-  .vacancy .vacancy__container .vacancy__content .star {
+  .vacancy .vacancy__container .vacancy__content .star::after {
     position: absolute;
     right: -74px;
     bottom: 330px;
-  }
-  .vacancy .vacancy__container .vacancy__content .star img {
-    width: 70px;
-    height: 70px;
   }
   .vacancy .vacancy__container .green-box {
     background: #2BC23A;
@@ -2588,7 +2548,7 @@ main {
 }
 .team .team__container {
   text-align: center;
-  padding: 0 15px;
+  padding: 0;
 }
 .team .team__container .mark {
   display: inline-block;
@@ -2612,6 +2572,9 @@ main {
   color: #3B3E45;
   margin-bottom: 100px;
 }
+.team .team__container img {
+  cursor: pointer;
+}
 .team .team__container .content {
   margin-top: 30px;
   text-align: start;
@@ -2622,6 +2585,7 @@ main {
   background: #FFFFFF;
   border-radius: 32px;
   width: 48.648%;
+  position: relative;
 }
 .team .team__container .content .card .avatar {
   margin-bottom: 20px;

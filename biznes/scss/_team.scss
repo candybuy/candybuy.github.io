@@ -3,7 +3,7 @@
     padding: 100px 0;
     .team__container {
         text-align: center;
-        padding: 0 15px;
+        padding: 0;
         .mark {
             display: inline-block;
             padding: 8px 24px;
@@ -26,6 +26,9 @@
             color: #3B3E45;
             margin-bottom: 100px;
         }
+        img {
+            cursor: pointer;
+        }
         .content {
             margin-top: 30px;
             text-align: start;
@@ -36,6 +39,7 @@
                 background: #FFFFFF;
                 border-radius: 32px;
                 width: 48.648%;
+                position: relative;
                 .avatar {
                     margin-bottom: 20px;
                 }

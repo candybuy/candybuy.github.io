@@ -4,12 +4,11 @@
         position: relative;
         padding: 0;
         .star {
-            position: absolute;
-            top: 47px;
-            left: -100px;
-            img {
-                width: 36px;
-                height: 36px;
+            &:after {
+                content: url(../images/about/star.svg);
+                position: absolute;
+                top: 47px;
+                left: -100px;
             }
         }
         .about-up {
@@ -184,9 +183,11 @@
         .about__container {
             padding: 0 15px;
             .star {
-                position: absolute;
-                top: 68px;
-                left: 19px;
+                &::after {
+                    position: absolute;
+                    top: 68px;
+                    left: 19px;
+                }
             }
             .about-up {
                 .about-up__left {
@@ -255,9 +256,11 @@
         .about__container {
             padding: 0 15px;
             .star {
-                position: absolute;
-                top: 68px;
-                left: 19px;
+                &::after {
+                    position: absolute;
+                    top: 68px;
+                    left: 19px;
+                }
             }
             .about-up {
                 .about-up__left {
@@ -376,9 +379,11 @@
         .about__container {
             padding: 0 15px;
             .star {
-                position: absolute;
-                top: 68px;
-                left: 19px;
+                &::after {
+                    position: absolute;
+                    top: 68px;
+                    left: 19px;
+                }
             }
             .about-up {
                 .about-up__left {
@@ -477,23 +482,9 @@
 @media screen and (max-width: 750.98px) {
     .about {
         background: #FAFCFD;
-        // display: flex;
-        // justify-content: center;
         .about__container {
             position: relative;
             padding: 0 15px;
-            // .star {
-            //     // width: 36px;
-            //     // height: 36px;
-            //     // display: inline-block;
-            //     position: absolute;
-            //     top: 47px;
-            //     left: -100px;
-            //     img {
-            //         width: 36px;
-            //         height: 36px;
-            //     }
-            // }
             .about-up {
                 justify-content: space-between;
                 .about-up__left {
@@ -688,12 +679,11 @@
             position: relative;
             padding: 0px;
             .star {
-                position: absolute;
-                top: 1%;
-                left: 37%;
-                img {
-                    width: 36px;
-                    height: 36px;
+                &::after {
+                    position: absolute;
+                    top: 1%;
+                    left: 37%;
+
                 }
             }
             .about-up {
@@ -888,8 +878,10 @@
     .about {
         .about__container {
             .star {
-                top: 14px;
-                left: 170px;
+                &::after {
+                    top: 14px;
+                    left: 170px;
+                }
             }
             .about-up {
                 .about-up__left {
