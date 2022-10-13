@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <button id="myBtn">Open Modal</button>
+    <div class="modal">
+        <div class="modal__content row">
+            <div class="modal__img col">
+                <img src="images/modal/left-side.png" alt="samgau">
+            </div>
+            <div class="modal__form col">
+                <span class="close"></span>
+                <div class="title">Оставьте заявку</div>
+                <form action="" class="form row">
+                    <input name="name" type="text" placeholder="Ваши имя и фамилия" class="name col"> <br>
+                    <input type="email" id="email" placeholder="Ваша электронная почта" class="email col"
+                        pattern=".+@globex\.com" size="30" required> <br>
+                    <input type="tel" id="phone" placeholder="+7" name="phone" class="number col"> <br>
+                    <input type="text" name="portfolio" placeholder="Ссылка на резюме или портфолио" id="portfolio" class="portfolio col"> <br>
+                    <input type="file" id="docpicker"
+                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"> <br>
+                    <button type="submit">Отправить резюме</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/imask/dist/imask.min.js"></script>
+    <!-- <script src="js/imask.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

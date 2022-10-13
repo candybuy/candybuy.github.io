@@ -1,0 +1,15 @@
+{
+  "name": "biznes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CandyBuy",
+  "license": "ISC",
+  "dependencies": {
+    "imask": "^6.4.3-alpha.0",
+    "swiper": "^8.4.0"
+  }
+}

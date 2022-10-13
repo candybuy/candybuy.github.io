@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-
     <title>Samgau</title>
 </head>
 
@@ -43,9 +42,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="title__button col">
-                <a href="#">Отправить резюме</a>
-            </div>
+            <div id="myBtn"class="title__button col">Отправить резюме</div>
         </div>
         <div class="header__content">
             <div class="header__container">
@@ -205,9 +202,7 @@
                     <div class="h2">Не нашли подходящую вакансию?</div>
                     <div class="p">Заполните анкету. Если у нас появится вакансия для вас, мы об этом сообщим!
                     </div>
-                    <div class="header__button">
-                        <a href="#">Заполнить анкету</a>
-                    </div>
+                    <div id="myBtn1" class="header__button">Заполнить анкету</div>
                 </div>
             </div>
         </section>
@@ -250,14 +245,8 @@
         </section>
         <section class="practice">
             <div class="practice__container">
-                <!-- <div class="line-small">
-                    <img src="images/practice/line-small.png" alt="small line">
-                </div> -->
                 <span class="line-small"></span>
                 <span class="line"></span>
-                <!-- <div class="line">
-                    <img src="images/practice/line.png" alt="line">
-                </div> -->
                 <div class="mark">Стажировка и практика</div>
                 <h2>Получите опыт в Samgau!</h2>
                 <div class="content row">
@@ -269,7 +258,7 @@
                             знания, полученные в ходе профессиональной подготовки. Если вы можете работать 8 часов в
                             день, имеете навыки в IT, то наши стажировки для вас!
                             <br> <br><span>Длительность стажировки – до 2 недель.</span></div>
-                        <a href="#" class="button">Заявка на стажировку в Samgau</a>
+                        <div id="myBtn2" class="button">Заявка на стажировку в Samgau</div>
                     </div>
                     <div class="card col">
                         <div class="h3">Практика</div>
@@ -279,7 +268,7 @@
                             с компьютером на «ты», стремитесь к профессиональному росту.
                             <br> <br> <span>Если вы на последнем курсе обучения, мы с радостью рассмотрим ваше
                                 трудоустройство в Samgau по итогам практики.</span></div>
-                        <a href="#" class="button">Заявка на практику в Samgau</a>
+                        <div id="myBtn3" class="button">Заявка на практику в Samgau</div>
                     </div>
                 </div>
             </div>
@@ -410,9 +399,7 @@
                     <div class="h2">Не нашли подходящую вакансию?</div>
                     <div class="p">Заполните анкету. Если у нас появится вакансия для вас, мы об этом сообщим!
                     </div>
-                    <div class="header__button">
-                        <a href="#">Заполнить анкету</a>
-                    </div>
+                    <div id="myBtn4" class="header__button">Заполнить анкету</div>
                 </div>
             </div>
         </section>
@@ -446,16 +433,41 @@
                         <a href="https://samgau.com/" class="bottom-card bottom-right col">samgau.com</a>
                         <a href="https://www.instagram.com/samgau.team/" class="bottom-card bottom-leftSmall col"></a>
                         <a href="https://samgau.com/" class="bottom-card bottom-rightSmall col"></a>
-
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal__content row">
+            <div class="modal__img col">
+                <img src="images/modal/left-side.png" alt="samgau">
+            </div>
+            <div class="modal__form col">
+                <span class="close"></span>
+                <div class="title">Оставьте заявку</div>
+                <form action="" class="form row">
+                    <input name="name" type="text" placeholder="Ваши имя и фамилия" class="name col"> 
+                    <input type="email" id="email" placeholder="Ваша электронная почта" class="email col" size="30" required>
+                    <input type="tel" id="phone" placeholder="+7" name="phone" class="number col"> 
+                    <div class="fileButton">
+                        <input type="text" name="portfolio" placeholder="Ссылка на резюме или портфолио" id="portfolio" class="portfolio col">
+                        <span>или</span>
+                        <input type="button" id="loadFileXml" value="загрузите файл" onclick="document.getElementById('file').click();" />
+                        <input type="file" style="display:none;" id="file" name="file"/>
+                    </div>
+                    <button type="submit" class="submit">Отправить резюме</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/header.js"></script>
+
+    <script src="node_modules/imask/dist/imask.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
